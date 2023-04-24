@@ -23,7 +23,11 @@ nav {
   flex-direction: column;
 }
 
-h1, h2, p { font-family: 'Nunito Sans', 'Open Sans', sans-serif; }
+h1,
+h2,
+p {
+  font-family: "Nunito Sans", "Open Sans", sans-serif;
+}
 
 h1 {
   padding-top: 100px;
@@ -42,4 +46,3 @@ p {
 footer {
   text-align: center;
 }
-
