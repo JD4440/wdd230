@@ -1,0 +1,17 @@
+@media only screen and (min-width: 32.5em) {
+
+header {
+    display: flex;
+}
+
+h1 {
+    padding-top: 100px;
+    padding-left: 120px;
+  }
+
+
+
+
+
+
+}

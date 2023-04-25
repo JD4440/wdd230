@@ -12,10 +12,7 @@ footer {
   background-color: midnightblue;
   padding: 20px;
   border-radius: 15px;
-}
-
-header {
-  display: flex;
+  text-align: center;
 }
 
 nav {
@@ -30,8 +27,6 @@ p {
 }
 
 h1 {
-  padding-top: 100px;
-  padding-left: 120px;
   text-align: center;
 }
 
@@ -43,6 +38,4 @@ p {
   font-size: 20px;
 }
 
-footer {
-  text-align: center;
-}
+
