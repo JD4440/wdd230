@@ -2,7 +2,7 @@ header,
 main,
 nav,
 footer {
-  max-width: 720px;
+  max-width: 28em;
   margin: 1.5rem auto;
 }
 
@@ -35,7 +35,7 @@ h2 {
 }
 
 p {
-  font-size: 20px;
+  font-size: 18px;
 }
 
 
