@@ -19,9 +19,16 @@
 }
 
 body {
-    font-size: 18px;
     font-family: "Nunito Sans", "Open Sans", sans-serif;
     text-align: center;
+}
+
+header,
+main,
+nav,
+footer {
+  max-width: 960px;
+  margin: 1.5rem auto;
 }
 
 header {
@@ -32,12 +39,19 @@ h1 {
   text-align: center;
 }
 
+h2 {
+  background-color: #f3672bff;
+  border-radius: 15px;
+}
+
+
 nav {
 	background-color: #4b8349ff;
 	text-align: center;
 	box-shadow: 0 0 30px #000000;
 	display: flex;
 	flex-direction: column;
+  border-radius: 15px;
 }
 
 nav div {
