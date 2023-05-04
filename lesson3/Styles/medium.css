@@ -1,13 +1,15 @@
 @media only screen and (min-width: 640px) {
-main {
-  grid-template-columns: 1fr 1fr;
-}
+  
+header {
+  display: flex;
+  }
 
-main section:nth-child(3) {
-    max-width: 100%;
-    grid-column: span 2;
+h1 {
+   padding-left: 200px;
+    font-size: 40px;
+  }
 
-}
+
 
 
 
