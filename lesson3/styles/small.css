@@ -4,13 +4,9 @@
   --accent1-color: #549aa0ff;
   --accent2-color: #7a7a7aff;
 
-  --heading-font: 'Tahoma', serif;
-  --paragraph-font: 'Times New Roman', serif;
+  --heading-font: "Nunito Sans", "Open Sans", sans-serif;
+  --paragraph-font: "Nunito Sans", "Open Sans", sans-serif;
   
-  --nav-background-color: #ffffff;
-  --nav-link-color: #00a6ed;
-  --nav-hover-link-color: #000000;
-  --nav-hover-background-color: #ffffff;
   }
 * {
     margin: 0;
@@ -20,14 +16,15 @@
 
 body {
     font-family: "Nunito Sans", "Open Sans", sans-serif;
-    text-align: center;
+    text-align: left;
+    margin: 2.0em;
 }
 
 header,
 main,
 nav,
 footer {
-  max-width: 960px;
+  max-width: 1024px;
   margin: 1.5rem auto;
 }
 
@@ -79,6 +76,30 @@ footer {
   padding: 20px;
   border-radius: 15px;
   text-align: center;
+}
+
+.primary-color {
+  color: rgb(255, 255, 255);
+  background-color: #4b8349ff;
+  max-width: 220px;
+}
+
+.secondary-color {
+  color: rgb(0, 0, 0);
+  background-color: #f3672bff;
+  max-width: 220px;
+}
+
+.accent1-color {
+  color: rgb(0, 0, 0);
+  background-color: #549aa0ff;
+  max-width: 220px;
+}
+
+.accent2-color {
+  color: rgb(255, 255, 255);
+  background-color: #7a7a7aff;
+  max-width: 220px;
 }
 
 
