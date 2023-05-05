@@ -69,6 +69,10 @@ nav a:hover {
 	color: yellow;
 }
 
+img {
+  max-width: 200px;
+}
+
 footer {
   background-color: #4b8349ff;
   color:white;
