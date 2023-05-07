@@ -1,6 +1,15 @@
+body {
+    text-align: center;
+}
 
 
 #color {
+    color: white;
+    background-color: darkblue;
+}
+
+#colorlarge{
+    font-size: 50px;
     color: white;
     background-color: darkblue;
 }
@@ -11,6 +20,10 @@
 .color {
     color: white;
     background-color: darkblue;
+}
+
+.large{
+    font-size: 50px;
 }
 
 
