@@ -19,37 +19,67 @@ body {
     font-family: "Nunito Sans", "Open Sans", sans-serif;
   }
 
-.grid-header {
-  display: grid;
-  grid-template-columns: 30% 30% 20% 20%;
-  grid-template-rows: 70% 20% 10%;
-}
+  body {
+    padding: 0;
+    margin: 0;
+  }
+  
+  header {
+    background-color: #fff;
+    padding: 5px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 900px;
+    margin: 0 auto;
+    border-bottom: 1px solid #bbb;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+    margin-left: 1rem;
+    max-width: 150px;
+  }
+  
+  .logo img {
+    width: 100px;
+    height: auto;
+  }
+  
+  .headings {
+    display: flex;
+    flex-direction: column;
+    margin-left: .5rem;
+  }
+  
+  .headings h1 {
+    font-size: 1.25rem;
+  }
+  
+  .m {
+    letter-spacing: 1pt;
+    color: darkgreen;
+    font-weight: 700;
+    font-size: 1rem;
+  }
+  
+  .social {
+    margin-right: 1.5rem;
+    display: flex;
+  }
+
+  header img {
+    max-width: 50px;
+  }
+  
+  .social svg {
+    width: 42px;
+    height: auto;
+  }
 
 #currenttime {
-  grid-row-start: 2;
-  grid-column: span 4;
-  text-align: center;
-}
-
-
-.header-logo {
-  max-width: 125px;
-  grid-row-start: 1;
-  grid-column-start: 1;
-  display: grid;
-
-}
-
-h1 {
-  font-size: 20px;
-  grid-row-start: 1;
-  grid-column-start: 2;
-}
-
-header img {
-  max-width: 38px;
-  grid-row-start: 1;
-  grid-column-start: 3;
+    background-color: #f3672bff;
 }
 
 .hamburger {
@@ -117,11 +147,6 @@ header img {
   color: rgb(255, 255, 255);
   background-color: #708080;
   transform: scale(1.1);
-}
-
-header span {
-  background-color: #f3672bff;
- 
 }
 
 footer {
