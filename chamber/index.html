@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" >
     <meta
       name="description"
-      content="Week 3 Assignment Site Plan home page for Shawn Jensen in WDD 230: Web Frontend Development at BYU Idaho.">
-    <title>Week 3: Site Plan Home Page</title>
+      content="Chamber of Commerce home page for Shawn Jensen in WDD 230: Web Frontend Development at BYU Idaho.">
+    <title>Home Page</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap" rel="stylesheet">
@@ -17,26 +17,73 @@
     <link rel="stylesheet" href="styles/large.css" >
   </head>
   <body>
-    <header>
-      <h1>Elk Point Chamber of Commerce</h1>
+    <header class="grid-header">
+      <img class="header-logo" src="images/logo.jpg" alt="My picture" />
+      <h1>Elk Point<br>Chamber of<br>Commerce</h1>
+   
+      <ul class="nav-social">
+        <li class="nav-social-site">
+            <a href="https://facebook.com" target="_blank"><img src="images/facebook.png" alt="Facebook icon"></a>
+        </li>
+        <li class="nav-social-site">
+            <a href="https://linkedin.com" target="_blank"><img src="images/instagram.png" alt="LinkedIn Icon"></a>
+        </li>
+    </ul>
+    <button class="hamburger">
+        <span>
+            &#9776;
+        </span>
+        <span>
+            X
+        </span>
+    </button>
+    <nav>
+        <ul class="nav-menu">
+            <li class="nav-link">
+                <a href="index.html" class="nav-link">Discover</a>
+            </li>
+            <li class="nav-link">
+                <a href="./" class="nav-link">Directory</a>
+            </li>
+            <li class="nav-link">
+                <a href="./" class="nav-link">Join</a>
+            </li>
+            <li class="nav-link">
+                <a href="./" class="nav-link">Contact</a>
+            </li>
+        </ul>
+    </nav>
+    <span id="currenttime"></span>
     </header>
+    
+    
     <main>
-      <nav>
-        <div><a href="index.html">Home</a></div>
-        <div><a href="target-audience.html">Target Audience</a></div>
-        <div><a href="design.html">Design</a></div>
-      </nav>
+      <div>
+        <p>Hero with site name and call to action</p>
+      </div>
+      <div>
+        <p>Event<p>
+      </div>
+      <div>
+        <p>Weather</p>
+      </div>
+      <div>
+        <p>News Release</p>
+      </div>
       <section>
-        <h2>Purpose</h2>
-        <p>This website is for business owners, prospective business owners, and members of the community to interact with the Chamber of Commerce.  The site will provide information about the Chamber of Commerce, participating businesses and board members, meeting times, and promote community insight and upcoming events.  </p>
-        <h3>Website Logo</h3>
-        <img src="images/logo.jpg" alt="Elk Paint Chamber Logo">
+        <div>Spotlight 1</div>
+        <div>Spotlight 2</div>
+        <div>Spotlight 3</div>
       </section>
+
     </main>
+    
     <footer>
-      &copy;<span id="date1"></span> | Shawn Jensen | Alberta <br>
-      Last Updated: <span id="modified1"></span>
+      &copy;<span id="footerdate"></span> | Shawn Jensen | Alberta <br>
+      Last Updated: <span id="lastupdated"></span>
     </footer>
+    
+    
     <script src="scripts/scripts.js"></script>
   </body>
 </html>

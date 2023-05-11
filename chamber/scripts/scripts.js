@@ -1,10 +1,14 @@
-const date1 = document.querySelector("#date1");
+document.querySelector('#footerdate').innerHTML = new Date().getFullYear();
+document.querySelector('#lastupdated').innerHTML = document.lastModified;
+document.querySelector('#currenttime').textContent = new Intl.DateTimeFormat("en-US", { dateStyle: "full"}).format(new Date());
 
-try {
-    const options = {year: "numeric"};
 
-date1.innerHTML = `<span class="highlight">${new Date().toLocaleDateString("en-US", options)}</span>`;} 
-catch (e) {console.log("Error with code or your browser does not support Locale");}
+function toggleMenu() {
+    document.querySelector(".nav-menu").classList.toggle("open");
+    document.querySelector(".hamburger").classList.toggle("open");
+}
 
-const modified1 = document.querySelector("#modified1");
-modified1.innerHTML = new Date(document.lastModified);
+const x = document.querySelector(".hamburger");
+x.onclick = toggleMenu;
+
+document.querySelectorAll(".nav-link").onclick = toggleMenu;
