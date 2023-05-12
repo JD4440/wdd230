@@ -177,6 +177,24 @@ nav {
   height: 200px;
 }
 
+.div-spotlight1 {
+  background-color: #549aa0ff;
+  border: thin #000000 solid;
+  height: 200px;
+}
+
+.div-spotlight2 {
+  background-color: #549aa0ff;
+  border: thin #000000 solid;
+  height: 200px;
+}
+
+.div-spotlight3 {
+  background-color: #549aa0ff;
+  border: thin #000000 solid;
+  height: 200px;
+}
+
 .join {
   background-color: #549aa0ff;
   border: thin #000000 solid;
@@ -196,6 +214,23 @@ footer {
 footer img {
   max-width: 150px;
 }
+
+.divider {
+  display: none;
+}
+
+.join {
+	display: none;
+}
+
+.div-spotlight3 {
+  display: none;
+}
+
+
+
+
+
 
 
 

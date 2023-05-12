@@ -1,14 +1,8 @@
 @media only screen and (min-width: 640px) {
   
-
-
-	nav {
-		flex-direction: row;
-	}
-	
-	nav a {
-		font-size: 1.1rem;
-	}
+.join {
+	display: block;
+}
 
 
 
