@@ -15,6 +15,7 @@
     box-sizing: border-box;
 }
 
+
 body {
     font-family: "Nunito Sans", "Open Sans", sans-serif;
   }
@@ -29,7 +30,7 @@ body {
     padding: 5px 0;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     max-width: 900px;
     margin: 0 auto;
     border-bottom: 1px solid #bbb;
@@ -39,38 +40,21 @@ body {
     display: flex;
     align-items: center;
     margin-left: 1rem;
-    max-width: 150px;
+    max-width: 100px;
   }
   
-  .logo img {
-    width: 100px;
-    height: auto;
+  .chamberheading {
+    font-size: 20px;
   }
   
-  .headings {
-    display: flex;
-    flex-direction: column;
-    margin-left: .5rem;
-  }
-  
-  .headings h1 {
-    font-size: 1.25rem;
-  }
-  
-  .m {
-    letter-spacing: 1pt;
-    color: darkgreen;
-    font-weight: 700;
-    font-size: 1rem;
-  }
-  
+
   .social {
     margin-right: 1.5rem;
     display: flex;
   }
 
   header img {
-    max-width: 50px;
+    max-width: 40px;
   }
   
   .social svg {
@@ -79,19 +63,17 @@ body {
   }
 
 #currenttime {
-    background-color: #f3672bff;
+    background-color: #4b8349ff;
+    color: white;
+    text-align: center;
 }
 
 .hamburger {
   border: none;
-  font-size: 40px;
+  font-size: 20px;
   color: rgb(255, 255, 255);
-  grid-row-start: 1;
-  grid-column-start: 4;
-  max-width: 60px;
-  display: grid;
-
-}
+  background-color: #4b8349ff;
+ }
 
 .hamburger :nth-child(1) {
   display: block;
@@ -110,9 +92,7 @@ body {
   display: none;
 }
 
-.nav-social {
-  display: flex;
-}
+
 .nav-menu {
   display: none;
   background-color: #4b8349ff;
