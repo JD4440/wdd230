@@ -2,7 +2,77 @@
 
 .div-spotlight3 {
     display: block;
+
 }
+
+main {
+    margin: 10px;
+    display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	grid-template-rows: repeat(3, 1fr);
+    
+	
+}
+
+.hero {
+	grid-row-start: 1;
+    grid-row-end: 3;
+	grid-column-start: 4;
+	grid-column-end: 10;
+    margin: 5px;
+}
+  
+.event {
+	grid-row-start: 1;
+	grid-column-start: 1;
+    grid-column-end: 4;
+    margin: 5px;
+}
+  
+.weather {
+	grid-row-start: 2;
+	grid-column-start: 1;
+    grid-column-end: 4;
+    margin: 5px;
+}
+  
+.news {
+    grid-row-start: 3;
+    grid-row-end: 4;
+	grid-column-start: 4;
+	grid-column-end: 10;
+    margin: 5px;
+}
+  
+.sec-spotlight {
+	display: flex;
+	flex-direction: column;
+	grid-row-start: 1;
+    grid-row-end: 4;
+	grid-column-start: 13;
+	grid-column-end: 10;
+    margin: 5px;
+}
+
+.div-spotlight1 {
+	flex: 1 33%;
+}
+
+.div-spotlight2 {
+	flex: 1 33%;
+}
+
+.div-spotlight3 {
+	flex: 1 33%;
+}
+
+.join {
+    grid-row-start: 3;
+    grid-row-end: 4;
+	grid-column-start: 1;
+	grid-column-end: 4;
+    margin: 5px;
+  }
 
 
 
