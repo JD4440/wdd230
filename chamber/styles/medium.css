@@ -25,11 +25,11 @@ main {
   }
   
 .weather {
-	grid-row-start: ;
+	grid-row-start: 5;
 	grid-column-start: 8;
 	grid-column-end: 13;
 	margin: 5px;
-  }
+ }
   
 .news {
 	grid-row-start: 2;
