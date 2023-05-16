@@ -51,7 +51,7 @@ body {
   
   .social {
     margin-right: 1.5rem;
-    display: flex;
+    
   }
 
   .social li {
@@ -140,68 +140,11 @@ nav {
   transform: scale(1.1);
 }
 
-.hero {
+.place-holder{
   background-color: #549aa0ff;
   border: thin #000000 solid;
   min-height: 200px;
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-
-.event {
-  background-color: #549aa0ff;
-  border: thin #000000 solid;
-  min-height: 200px;
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-
-.weather {
-  background-color: #549aa0ff;
-  border: thin #000000 solid;
-  min-height: 200px;
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-
-.news {
-  background-color: #549aa0ff;
-  border: thin #000000 solid;
-  min-height: 200px;
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-
-.div-spotlight {
-  background-color: #549aa0ff;
-  border: thin #000000 solid;
-  min-height: 200px;
-}
-
-.div-spotlight1 {
-  background-color: #549aa0ff;
-  border: thin #000000 solid;
-  min-height: 200px;
-}
-
-.div-spotlight2 {
-  background-color: #549aa0ff;
-  border: thin #000000 solid;
-  min-height: 200px;
-}
-
-.div-spotlight3 {
-  background-color: #549aa0ff;
-  border: thin #000000 solid;
-  min-height: 200px;
-}
-
-.join {
-  background-color: #549aa0ff;
-  border: thin #000000 solid;
-  min-height: 200px;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  grid-gap: 10px;
 }
 
 footer {
@@ -218,6 +161,10 @@ footer img {
 
 .divider {
   display: none;
+}
+
+#map-link {
+  color: white;
 }
 
 .join {
