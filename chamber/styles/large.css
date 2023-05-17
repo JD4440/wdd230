@@ -41,21 +41,19 @@ main {
     grid-row-end: 3;
 	grid-column-start: 4;
 	grid-column-end: 10;
-    margin: 5px;
 }
-  
+
+
 .event {
 	grid-row-start: 1;
 	grid-column-start: 1;
     grid-column-end: 4;
-    margin: 5px;
 }
   
 .weather {
 	grid-row-start: 2;
 	grid-column-start: 1;
     grid-column-end: 4;
-    margin: 5px;
 }
   
 .news {
@@ -63,7 +61,6 @@ main {
     grid-row-end: 4;
 	grid-column-start: 4;
 	grid-column-end: 10;
-    margin: 5px;
 }
   
 .sec-spotlight {
@@ -73,7 +70,6 @@ main {
     grid-row-end: 4;
 	grid-column-start: 13;
 	grid-column-end: 10;
-    margin: 5px;
 }
 
 .div-spotlight1 {
@@ -93,7 +89,6 @@ main {
     grid-row-end: 4;
 	grid-column-start: 1;
 	grid-column-end: 4;
-    margin: 5px;
   }
 
 

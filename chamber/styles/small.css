@@ -149,11 +149,46 @@ nav {
   transform: scale(1.1);
 }
 
+main {
+	display: grid;
+	grid-gap: 10px;
+}
+
 .place-holder{
   background-color: #549aa0ff;
   border: thin #000000 solid;
   min-height: 200px;
-  grid-gap: 10px;
+  text-align: center;
+}
+
+.hero {
+  position: relative;
+  }
+
+.hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.heroh2 {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+}
+
+.herojoinchamber {
+  position: absolute;
+  bottom: 30px;
+  right: 25px;
+  background-color: #f3672bff;
+  border-radius: 10px;
+}
+
+.spotlightimage {
+  width: 150px;
+  height: auto;
+  object-fit: cover;
 }
 
 footer {

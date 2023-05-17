@@ -7,35 +7,31 @@ main {
 	display: grid;
 	grid-template-columns: repeat(12, 1fr);
 	grid-template-rows: repeat(5, 1fr);
-	
+	grid-gap: 10px;
 }
 
 .hero {
 	grid-row-start: 1;
 	grid-column-start: 1;
 	grid-column-end: 13;
-	margin: 5px;
   }
   
 .event {
 	grid-row-start: 5;
 	grid-column-start: 1;
 	grid-column-end: 8;
-	margin: 5px;
   }
   
 .weather {
 	grid-row-start: 5;
 	grid-column-start: 8;
 	grid-column-end: 13;
-	margin: 5px;
  }
   
 .news {
 	grid-row-start: 2;
 	grid-column-start: 1;
 	grid-column-end: 13;
-	margin: 5px;
   }
   
 .sec-spotlight {
@@ -44,7 +40,6 @@ main {
 	grid-row-start: 3;
 	grid-column-start: 1;
 	grid-column-end: 13;
-	margin: 5px;
 }
 
 .div-spotlight1 {
@@ -59,7 +54,11 @@ main {
 	grid-row-start: 4;
 	grid-column-start: 1;
 	grid-column-end: 13;
-	margin: 5px;
+}
+
+.joinus {
+	background-color: #f3672bff;
+	border-radius: 10px;
 }
   
 .top-footer {
