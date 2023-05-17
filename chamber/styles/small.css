@@ -22,6 +22,15 @@ body {
     margin: 0 auto;
   }
 
+.banner {
+  background-color: #f3672bff;
+  color: rgb(0, 0, 0);
+  padding: 5px 0;
+  flex-direction: column;
+  align-items: center;
+  display: none;
+ }
+
   header {
     background-color: #fff;
     padding: 5px 0;
@@ -135,8 +144,8 @@ nav {
 }
 
 .nav-menu a:hover {
-  color: rgb(255, 255, 255);
-  background-color: #708080;
+  color: rgb(0, 0, 0);
+  background-color: #f3672bff;
   transform: scale(1.1);
 }
 
