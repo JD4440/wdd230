@@ -15,19 +15,17 @@
     box-sizing: border-box;
 }
 
-
 body {
     font-family: "Nunito Sans", "Open Sans", sans-serif;
     max-width: 960px;
     margin: 0 auto;
   }
 
-.banner {
+#banner {
   background-color: #f3672bff;
   color: rgb(0, 0, 0);
   padding: 5px 0;
-  flex-direction: column;
-  align-items: center;
+  text-align: center;
   display: none;
  }
 

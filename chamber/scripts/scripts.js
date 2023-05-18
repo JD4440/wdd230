@@ -15,3 +15,8 @@ x.onclick = toggleMenu;
 document.querySelectorAll(".nav-link").onclick = toggleMenu;
 
 //display banner on Monday and Tursday
+const today = new Date().getDay();
+if (today === 1 || today === 2) {
+    document.getElementById("banner").style.display = "block";
+}
+
