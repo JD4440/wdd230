@@ -43,7 +43,6 @@ main {
 	grid-column-end: 10;
 }
 
-
 .event {
 	grid-row-start: 1;
 	grid-column-start: 1;

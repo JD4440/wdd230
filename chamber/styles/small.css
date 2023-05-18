@@ -157,7 +157,6 @@ main {
 .place-holder{
   background-color: #549aa0ff;
   border: thin #000000 solid;
-  min-height: 200px;
   text-align: center;
 }
 
