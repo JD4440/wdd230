@@ -182,12 +182,6 @@ main {
   border-radius: 10px;
 }
 
-.spotlightimage {
-  width: 150px;
-  height: auto;
-  object-fit: cover;
-}
-
 footer {
   background-color: #4b8349ff;
   color:white;
