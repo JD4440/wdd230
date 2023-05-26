@@ -21,7 +21,7 @@ function CalculateWindChill (t, s) {
 
 document.querySelector('#tempCurrent').innerHTML = temp
 document.querySelector('#windSpeed').innerHTML = windSpeed
-document.querySelector('#windChill').innerHTML = "N/A"
+document.querySelector('#windChill').innerHTML = "windChill"
 
 let tempFarenheit = CelsiusToFarenheit(tempCelsius);
 let windSpeedMPH = ConvertKPHToMPH(kph);
