@@ -144,6 +144,10 @@ nav {
   transform: scale(1.1);
 }
 
+h1 {
+  padding-left: 10px;
+}
+
 main {
 	display: grid;
 	grid-gap: 10px;
