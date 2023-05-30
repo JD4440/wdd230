@@ -21,9 +21,18 @@ function CalculateWindChill (t, s) {
 
 document.querySelector('#tempCurrent').innerHTML = temp
 document.querySelector('#windSpeed').innerHTML = windSpeed
-document.querySelector('#windChill').innerHTML = "windChill"
+
+let tempfarenheit = CelsiusToFarenheit(temp)
+let windSpeedMph = ConvertKPHToMPH (windSpeed)
 
 
+if (tempfarenheit <= 50 && windSpeedMph >3) {
+    let windChill = CalculateWindChill(tempfarenheit, windSpeedMph)
+    document.querySelector('#windChill').innerHTML = Math.floor((windChill-32)*(5/9))
+}
+else {
+    document.querySelector('#windChill').innerHTML = "N/A"
+}
 
 
 
