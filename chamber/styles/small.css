@@ -153,6 +153,36 @@ main {
 	grid-gap: 10px;
 }
 
+.haying img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.lake img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.library img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.park img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.canada img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
 .place-holder{
   background-color: #549aa0ff;
   border: thin #000000 solid;
