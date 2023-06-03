@@ -90,7 +90,47 @@ main {
 	grid-column-end: 4;
   }
 
+  .history {
+	grid-row-start: 1;
+	grid-column-start: 1;
+	grid-column-end: 4;
+  }
 
+  .demographics {
+	grid-row-start: 2;
+	grid-column-start: 1;
+	grid-column-end: 4;
+  }
+
+  .haying{
+	grid-row-start: 1;
+	grid-column-start: 4;
+	grid-column-end: 13;
+  }
+
+  .lake{
+	grid-row-start: 2;
+	grid-column-start: 4;
+	grid-column-end: 13;
+  }
+
+  .library{
+	grid-row-start: 3;
+	grid-column-start: 1;
+	grid-column-end: 13;
+  }
+
+  .park{
+	grid-row-start: 4;
+	grid-column-start: 1;
+	grid-column-end: 13;
+  }
+
+  .canada{
+	grid-row-start: 5;
+	grid-column-start: 1;
+	grid-column-end: 13;
+  }
 
 
 
