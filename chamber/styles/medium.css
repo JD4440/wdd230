@@ -81,41 +81,41 @@ main {
 .history {
 	grid-row-start: 1;
 	grid-column-start: 1;
-	grid-column-end: 13;
+	grid-column-end: 5;
   }
 
   .demographics {
 	grid-row-start: 2;
 	grid-column-start: 1;
-	grid-column-end: 13;
+	grid-column-end: 5;
   }
 
   .haying{
+	grid-row-start: 1;
+	grid-column-start: 5;
+	grid-column-end: 13;
+  }
+
+  .lake{
+	grid-row-start: 2;
+	grid-column-start: 5;
+	grid-column-end: 13;
+  }
+
+  .library{
 	grid-row-start: 3;
 	grid-column-start: 1;
 	grid-column-end: 13;
   }
 
-  .lake{
+  .park{
 	grid-row-start: 4;
 	grid-column-start: 1;
 	grid-column-end: 13;
   }
 
-  .library{
-	grid-row-start: 5;
-	grid-column-start: 1;
-	grid-column-end: 13;
-  }
-
-  .park{
-	grid-row-start: 6;
-	grid-column-start: 1;
-	grid-column-end: 13;
-  }
-
   .canada{
-	grid-row-start: 7;
+	grid-row-start: 5;
 	grid-column-start: 1;
 	grid-column-end: 13;
   }
