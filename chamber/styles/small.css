@@ -71,7 +71,7 @@ body {
     height: auto;
   }
 
-#currenttime {
+.design {
     background-color: #4b8349ff;
     color: white;
     text-align: center;
