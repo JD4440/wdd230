@@ -120,6 +120,9 @@ main {
 	grid-column-end: 13;
   }
 
+  .hover:hover {box-shadow: 0 0 50px #333;}
+  /* rounded corners - boxmodel */
+  .rocorn {border-radius: 15px 15px;}
 
 
 
