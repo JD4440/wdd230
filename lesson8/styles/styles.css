@@ -1,0 +1,44 @@
+header,
+footer {
+  color: white;
+  background-color: midnightblue;
+  padding: 20px;
+  border-radius: 15px;
+  text-align: center;
+}
+
+table {
+  margin: 15px auto;
+  border-collapse: collapse;
+}
+
+thead {
+  background-color: black;
+  color: white;
+  font-size: 20px;
+}
+
+.table-headings {
+  background-color: #605c5c;
+  color: white;
+}
+
+td {
+  padding: 10px 20px;
+  border: 1px solid rgba(0, 0, 0);
+  text-align: center;
+}
+
+th {
+  font-size: larger;
+  padding: 18px;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #EEE;
+}
+
+tbody tr td:first-child {
+  font-weight: bold;
+  font-size: 15px;
+}
