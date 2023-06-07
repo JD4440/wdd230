@@ -85,6 +85,7 @@ body {
   color: rgb(255, 255, 255);
   background-color: #4b8349ff;
   height: fit-content;
+  padding: 10px;
  }
 
 .hamburger :nth-child(1) {
