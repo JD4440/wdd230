@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" >
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <meta
+      name="description"
+      content="Discover the Elk Point Chamber of Commerce proudly serving the community of Elk Point, Alberta">
+    <link rel="shortcut icon" href="favicon.ico">
+    <title>Discover the Elk Point Chamber of Commerce</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css" >
+    <link rel="stylesheet" href="styles/small.css" >
+    <link rel="stylesheet" href="styles/medium.css" >
+    <link rel="stylesheet" href="styles/large.css" >
+  </head>
+  <body>
+    <header>
+      <div id="banner">
+        <h3>🌳Come join us for the chamber meet and greet Wednesday at 7:00 p.m🌳</h3>
+      </div>
+      <div>
+      <img class="logo" src="images/logo.webp" alt="Elk Point Chamber Logo">
+      <h1 class="chamberheading">Elk Point Chamber of Commerce</h1>
+      <ul class="social">
+        <li class="nav-social-link">
+            <a href="https://facebook.com" target="_blank"><img src="images/facebook.png" alt="Facebook"></a>
+        </li>
+        <li class="nav-social-link">
+            <a href="https://twitter.com" target="_blank"><img src="images/twitter.png" alt="Twitter"></a>
+        </li>
+      </ul>
+      <button class="hamburger">
+        <span>
+            &#9776;
+        </span>
+        <span>
+            X
+        </span>
+      </button>
+      </div>
+        <nav>
+          <ul class="nav-menu">
+            <li class="nav-link">
+              <a href="index.html" class="nav-link">Home Page</a>
+            </li>
+            <li class="nav-link">
+              <a href="./" class="nav-link">Discover</a>
+            </li>
+            <li class="nav-link">
+              <a href="./" class="nav-link">Directory</a>
+            </li>
+            <li class="nav-link">
+              <a href="./" class="nav-link">Join</a>
+            </li>
+            <li class="nav-link">
+              <a href="./" class="nav-link">Contact</a>
+            </li>
+        </ul>
+      </nav>
+      <div><p id="currenttime" class="design"></p></div>
+    </header>
+    <main>
+        <h2>Join the Elk Point Chamber of Commerce</h2>
+        <form action="thankyou.html" method="get">
+          <label for="first-name">First Name:</label>
+          <input type="text" id="first-name" name="first-name" required><br><br>
+      
+          <label for="last-name">Last Name:</label>
+          <input type="text" id="last-name" name="last-name" required><br><br>
+      
+          <label for="position">Business Position Title:</label>
+          <input type="text" id="position" name="position" pattern="[A-Za-z\s\-]{7,}" title="Please enter at least seven alpha characters, hyphens, or spaces."/><br><br>
+      
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required placeholder="example@example.com"><br><br>
+      
+          <label for="cell-phone">Cell Phone Number:</label>
+          <input type="tel" id="cell-phone" name="cell-phone" required><br><br>
+      
+          <label for="business-name">Business Name/Title:</label>
+          <input type="text" id="business-name" name="business-name" required><br><br>
+      
+          <label for="membership-level">Membership Level:</label>
+          <select id="membership-level" name="membership-level">
+            <option value="np-membership">NP Membership</option>
+            <option value="bronze-membership">Bronze Membership</option>
+            <option value="silver-membership">Silver Membership</option>
+            <option value="gold-membership">Gold Membership</option>
+          </select><br><br>
+      
+          <label for="business-description">Business Description:</label>
+          <textarea id="business-description" name="business-description" rows="4" cols="50"></textarea><br><br>
+      
+          <input type="hidden" name="form-load-time" value="<?php echo date('Y-m-d H:i:s'); ?>">
+      
+          <input type="submit" value="Submit">
+        </form>
+
+
+
+
+
+
+
+
+     
+    
+    </main>
+    <footer>
+      <div class="top-footer">
+        <div>
+          <img class="discover-img hover rocorn" src="images/placeholder-org.png" data-src="images/logo.webp" alt="Elk Point Chamber Logo">
+        </div>
+        <div>
+          <p>Elk Point Chamber of Commerce</p>
+          <address>4925 50 St, Elk Point, AB T0A 1A0</address>    
+        </div>
+        <div>
+            <p>📧 info@elkpointchamber.ca</p>
+            <p>📞 780-645-2919</p>
+            <a href="https://goo.gl/maps/FNQVBvcWWPxhNGk26" id="map-link">📍Location Map</a>    
+        </div>
+      </div>
+
+      <div>
+        <div class="bottom-footer">
+          <p>&copy;<span id="footerdate"></span>  Elk Point Chamber</p> 
+          <p class="divider"> | </p>   
+          <p>Shawn Jensen</p>
+          <p class="divider"> | </p> 
+          <p> WDD 230 Project</p>
+          <p class="divider"> | </p> 
+        </div>
+        <div>
+        <p>Last Updated: <span id="lastupdated"></span></p>
+        </div>
+      </div>
+    </footer>
+    
+    
+    <script src="scripts/scripts.js"></script>
+  </body>
+</html>

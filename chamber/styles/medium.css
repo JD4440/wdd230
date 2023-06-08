@@ -124,6 +124,18 @@ main {
   /* rounded corners - boxmodel */
   .rocorn {border-radius: 15px 15px;}
 
+ .thank-you {
+	grid-row-start: 1;
+	grid-column-start: 1;
+	grid-column-end: 13;
+  }
+
+  .thank-you-message {
+	grid-row-start: 2;
+	grid-column-start: 1;
+	grid-column-end: 13;
+  }
+
 
 
 
