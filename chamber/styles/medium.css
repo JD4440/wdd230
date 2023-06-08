@@ -124,6 +124,13 @@ main {
   /* rounded corners - boxmodel */
   .rocorn {border-radius: 15px 15px;}
 
+  .h2-join {
+	grid-row-start: 1;
+	grid-column-start: 1;
+	grid-column-end: 13;
+	text-align: center;
+  }
+
  .thank-you {
 	grid-row-start: 1;
 	grid-column-start: 1;
