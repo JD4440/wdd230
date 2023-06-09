@@ -124,21 +124,23 @@ main {
   /* rounded corners - boxmodel */
   .rocorn {border-radius: 15px 15px;}
 
-  .h2-join {
+.h2-join {
 	grid-row-start: 1;
 	grid-column-start: 1;
 	grid-column-end: 13;
 	text-align: center;
   }
 
-  .join-form {
+.join-form {
 	grid-row-start: 2;
+	grid-row-end: 12;
 	grid-column-start: 1;
 	grid-column-end: 7;	
 }
 
 .join-table {
 	grid-row-start: 2;
+	grid-row-end: 12;
 	grid-column-start: 7;
 	grid-column-end: 13;
 }
