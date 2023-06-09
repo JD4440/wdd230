@@ -202,8 +202,6 @@ form {
   border-radius: 5px;
   background-color: #549aa0ff;
   display: grid;
-  margin-left: 5px;
-  margin-right: 20px;
   padding: 10px;
 }
 
@@ -237,6 +235,7 @@ button:hover {
 
 table {
   border-collapse: collapse;
+  width: auto;
 }
 
 thead {
