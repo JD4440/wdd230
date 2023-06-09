@@ -239,12 +239,6 @@ table {
   border-collapse: collapse;
 }
 
-caption {
-  padding: 10px;
-  caption-side: bottom;
-  font-size: 15px;
-}
-
 thead {
   background-color: #4b8349ff;
   color: white;
@@ -260,7 +254,6 @@ td {
   padding: 10px 20px;
   border: 1px solid rgba(0, 0, 0);
   text-align: center;
-  column-width: 75px;
 }
 
 th {
