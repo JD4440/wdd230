@@ -60,7 +60,7 @@ main {
 	background-color: #f3672bff;
 	border-radius: 10px;
 }
-  
+
 .top-footer {
 	display: flex;
 	flex-direction: row;
@@ -130,6 +130,18 @@ main {
 	grid-column-end: 13;
 	text-align: center;
   }
+
+  .join-form {
+	grid-row-start: 2;
+	grid-column-start: 1;
+	grid-column-end: 7;
+}
+
+.join-table {
+	grid-row-start: 2;
+	grid-column-start: 7;
+	grid-column-end: 13;
+}
 
  .thank-you {
 	grid-row-start: 1;

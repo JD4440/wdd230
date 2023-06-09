@@ -65,84 +65,105 @@
     </header>
     <main>
         <h2 class="h2-join">Join the Elk Point Chamber of Commerce</h2>
-        <form action="thankyou.html" method="get">
+        <form action="thankyou.html" method="get" class="join-form">
           <label for="first-name">First Name:</label>
-          <input type="text" id="first-name" name="first-name" required><br><br>
+          <input type="text" id="first-name" name="first-name" required><br>
       
           <label for="last-name">Last Name:</label>
-          <input type="text" id="last-name" name="last-name" required><br><br>
+          <input type="text" id="last-name" name="last-name" required><br>
       
           <label for="position">Business Position Title:</label>
-          <input type="text" id="position" name="position" pattern="[A-Za-z\s\-]{7,}" title="Please enter at least seven alpha characters, hyphens, or spaces."/><br><br>
+          <input type="text" id="position" name="position" pattern="[A-Za-z \-]{7,}" title="Please enter at least seven alpha characters, hyphens, or spaces."/><br>
       
           <label for="email">Email:</label>
-          <input type="email" id="email" name="email" required placeholder="example@example.com"><br><br>
+          <input type="email" id="email" name="email" required placeholder="youremail@outlook.com"><br>
       
           <label for="cell-phone">Cell Phone Number:</label>
-          <input type="tel" id="cell-phone" name="cell-phone" required><br><br>
+          <input type="tel" id="cell-phone" name="cell-phone" required><br>
       
           <label for="business-name">Business Name/Title:</label>
-          <input type="text" id="business-name" name="business-name" required><br><br>
+          <input type="text" id="business-name" name="business-name" required><br>
       
-          <label for="membership-level">Membership Level:</label>
-          <select id="membership-level" name="membership-level">
-            <option value="np-membership">NP Membership</option>
-            <option value="bronze-membership">Bronze Membership</option>
-            <option value="silver-membership">Silver Membership</option>
-            <option value="gold-membership">Gold Membership</option>
-          </select><br><br>
+          <legend>Membership Level</legend>
+          <div class="radioInstruction">Please select one: </div>
+              <label class="sbs"><input type="radio" name="membership" value="np" required> Non-Profit (NP)</label>
+              <label class="sbs"><input type="radio" name="membership" value="Bronze" required> Bronze Membership</label>
+              <label class="sbs"><input type="radio" name="membership" value="Silver" required> Silver Membership</label>
+              <label class="sbs"><input type="radio" name="membership" value="Gold" required> Gold Membership</label>
       
           <label for="business-description">Business Description:</label>
-          <textarea id="business-description" name="business-description" rows="4" cols="50"></textarea><br><br>
-      
-          <input type="hidden" name="form-load-time" value="<?php echo date('Y-m-d H:i:s'); ?>">
-      
+          <textarea id="business-description" name="business-description" rows="4" cols="50"></textarea><br>
+    
           <input type="submit" value="Submit">
         </form>
 
-        <table>
-            <caption>Table 1: Account Feature Comparison</caption>
+        <table class="join-table">
+            <caption>Elk Point Chamber of Commerce</caption>
             <thead>
                 <tr>
-                    <th colspan="4" scope="colgroup">ACME Wildwest Services</th>
+                    <th colspan="5" scope="colgroup">Membership Levels</th>
                 </tr> 
             </thead>
             <tbody>
                 <tr class="table-headings">
                     <th></th>
-                    <th>Basic</th>
-                    <th>Premium</th>
-                    <th>Deluxe</th>
+                    <th>Non Profit(NP)</th>
+                    <th>Bronze</th>
+                    <th>Silver</th>
+                    <th>Gold</th>
                 </tr>  
                 <tr>
-                    <td>Feature 1</td>
+                    <td>Online Business Directory Listing</td>
+                    <td>✔️</td>
+                    <td>✔️</td>
+                    <td>✔️</td>
+                    <td>✔️</td>
+                </tr>
+                <tr>
+                    <td>Training seminars</td>
+                    <td>✔️</td>
                     <td>✔️</td>
                     <td>✔️</td>
                     <td>✔️</td>
                 </tr>
                 <tr>
-                    <td>Feature 2</td>
-                    <td>❌</td>
+                    <td>Quartly printed Newsletter</td>
                     <td>✔️</td>
                     <td>✔️</td>
-                </tr>
-                <tr>
-                    <td>Feature 3</td>
-                    <td>❌</td>
-                    <td>❌</td>
+                    <td>✔️</td>
                     <td>✔️</td>
                 </tr>    
+                <tr>
+                  <td>Features and Ad spots on newsletters</td>
+                  <td>❌</td>
+                  <td>❌</td>
+                  <td>✔️</td>
+                  <td>✔️</td>
+              </tr>  
+              <tr>
+                  <td>Extra Community Discounts</td>
+                  <td>❌</td>
+                  <td>❌</td>
+                  <td>✔️</td>
+                  <td>✔️</td>
+              </tr>  
+              <tr>
+                  <td>Job Posting</td>
+                  <td>❌</td>
+                  <td>❌</td>
+                  <td>❌</td>
+                  <td>✔️</td>
+              </tr>  
+              <tr>
+                  <td>Job Posting</td>
+                  <td>❌</td>
+                  <td>❌</td>
+                  <td>❌</td>
+                  <td>✔️</td>
+            </tr>  
             </tbody>
         </table>
-
-
-
-
-
-
-
-     
-    
+        <input type="hidden" id="currenttime" >
     </main>
     <footer>
       <div class="top-footer">

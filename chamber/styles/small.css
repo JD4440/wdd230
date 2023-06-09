@@ -192,9 +192,56 @@ main {
   border-radius: 10px;
 }
 
+.h2-join{
+  text-align: center;
+}
+
+form {
+  width: auto;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #549aa0ff;
+  border-radius: 5px;
+  background-color: #549aa0ff;
+  display: grid;
+}
+
+input[type="radio"] {
+  width: 20px;
+  height: 20px;
+  vertical-align: bottom;
+}
+
+button {
+  margin: 1rem;
+  background-color: navy;
+  color: #fff;
+  border: none;
+  border-radius: .5rem;
+  padding: .75rem;
+  font-size: 1.2rem;
+}
+
+button:hover {
+  background-color: darkgreen;
+}
+
+.form-item {
+  display: grid;
+  align-items: center;
+}
+
+.column1 {
+grid-template-columns: auto;
+margin: 0.5rem 0;
+}
+
+
 table {
   margin: 15px auto;
+  padding: 10px;
   border-collapse: collapse;
+  width: fit;
 }
 
   
@@ -205,14 +252,14 @@ caption {
 }
 
 thead {
-  background-color: black;
+  background-color: #4b8349ff;
   color: white;
   font-size: 20px;
 }
 
 .table-headings {
-  background-color: #605c5c;
-  color: white;
+  background-color: #f3672bff;
+  color: #000000;
 }
 
 td {
@@ -227,14 +274,6 @@ th {
   padding: 18px;
 }
 
-tbody tr:nth-child(even) {
-  background-color: #EEE;
-}
-
-tbody tr td:first-child {
-  font-weight: bold;
-  font-size: 15px;
-}
 
 footer {
   background-color: #4b8349ff;
