@@ -128,7 +128,6 @@ main {
 	grid-row-start: 1;
 	grid-column-start: 1;
 	grid-column-end: 13;
-	text-align: center;
   }
 
 .join-form {
