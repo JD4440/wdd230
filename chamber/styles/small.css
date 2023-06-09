@@ -55,7 +55,7 @@ body {
   
   .social {
     margin-right: 1.5rem;
-    
+    padding: 5px;
   }
 
   .social li {
@@ -234,24 +234,12 @@ button:hover {
   background-color: darkgreen;
 }
 
-.form-item {
-  display: grid;
-  align-items: center;
-}
-
-.column1 {
-grid-template-columns: auto;
-margin: 0.5rem 0;
-}
-
-
 table {
   margin: 15px auto;
   padding: 10px;
   border-collapse: collapse;
 }
 
-  
 caption {
   padding: 10px;
   caption-side: bottom;
