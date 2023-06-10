@@ -4,10 +4,8 @@
 	display: block;
 }
 main {
-	display: grid;
 	grid-template-columns: repeat(12, 1fr);
 	grid-template-rows: repeat(5, 1fr);
-	grid-gap: 10px;
 }
 
 .hero {
@@ -124,6 +122,13 @@ main {
   /* rounded corners - boxmodel */
   .rocorn {border-radius: 15px 15px;}
 
+.join-grid {
+	display: grid;
+	grid-template-columns: 50% 50%;
+	grid-template-rows: 10% 90%;
+	grid-gap: 10px;
+}
+
 .h2-join {
 	grid-row-start: 1;
 	grid-column-start: 1;
@@ -133,17 +138,12 @@ main {
 .join-form {
 	display: flex;
 	flex-direction: column;
-	grid-row-start: 2;
-	grid-column-start: 1;
-	grid-column-end: 7;	
+
 }
 
 join-table {
 	display: flex;
 	flex-direction: column;
-	grid-row-start: 2;
-	grid-column-start: 7;
-	grid-column-end: 13;
 }
 
  .thank-you {
