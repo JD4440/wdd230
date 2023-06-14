@@ -1,20 +1,19 @@
-const url = 'https://brotherblazzard.github.io/canvas-content/latter-day-prophets.json';
 
-async function getProphetData() {
-    const response = await fetch(url);
+async function getBusinessData() {
+    const response = await fetch(data.json);
     const data = await response.json();
-    //console.table(data.prophets);  // note that we reference the prophet array of the data object given the structure of the json file
-    displayProphets(data.prophets);
+    console.table(data.business);  // note that we reference the prophet array of the data object given the structure of the json file
+    displayProphets(data.business);
   }
   
-  getProphetData();
-    
-    function displayProphets (prophets) {
+  getBusinessData();
+   
+   function displayDirectory (directory) {
     
     const cards = document.querySelector('div.cards'); // select the output container element
 
   
-    prophets.forEach((prophet) => {
+    directory.forEach((business) => {
       // Create elements to add to the div.cards element
       let card = document.createElement('section');
       let h2 = document.createElement('h2');
@@ -24,7 +23,7 @@ async function getProphetData() {
 
   
       // Build the h2 content out to show the prophet's full name - finish the template string
-      h2.textContent = `${prophet.name} ${prophet.lastname}`;
+      h2.textContent = `${data.name}`;
       dateofbirth.textContent = `Date of Birth: ${prophet.birthdate}`;
       placeofbirth.textContent = `Place of Birth: ${prophet.birthplace}`;
 
@@ -47,3 +46,5 @@ async function getProphetData() {
   } // end of function expression
 
   prophetList = {};
+
+ 
