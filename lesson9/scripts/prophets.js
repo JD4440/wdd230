@@ -1,3 +1,14 @@
+const url = 'https://brotherblazzard.github.io/canvas-content/latter-day-prophets.json';
+
+async function getProphetData() {
+    const response = await fetch(url);
+    const data = await response.json();
+    //console.table(data.prophets);  // note that we reference the prophet array of the data object given the structure of the json file
+    displayProphets(data.prophets);
+  }
+  
+  getProphetData();
+    
     function displayProphets (prophets) {
     
     const cards = document.querySelector('div.cards'); // select the output container element
@@ -37,13 +48,3 @@
 
   prophetList = {};
 
-const url = 'https://brotherblazzard.github.io/canvas-content/latter-day-prophets.json';
-
-async function getProphetData() {
-    const response = await fetch(url);
-    const data = await response.json();
-    //console.table(data.prophets);  // note that we reference the prophet array of the data object given the structure of the json file
-    displayProphets(data.prophets);
-  }
-  
-  getProphetData();
