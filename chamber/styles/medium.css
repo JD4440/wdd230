@@ -123,17 +123,11 @@ main {
   .rocorn {border-radius: 15px 15px;}
 
 .join-grid {
-	display: grid;
-	grid-template-columns: 50% 50%;
-	grid-template-rows: 10% 90%;
-	grid-gap: 10px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
 }
 
-.h2-join {
-	grid-row-start: 1;
-	grid-column-start: 1;
-	grid-column-end: 13;
-  }
 
 .join-form {
 	display: flex;
@@ -145,6 +139,14 @@ join-table {
 	display: flex;
 	flex-direction: column;
 }
+
+td {
+	font-size: 20px;
+  }
+  
+  th {
+	font-size: 20px;
+  }
 
  .thank-you {
 	grid-row-start: 1;
