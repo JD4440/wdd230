@@ -3,11 +3,6 @@ document.querySelector('#footerdate').innerHTML = new Date().getFullYear();
 document.querySelector('#lastupdated').innerHTML = document.lastModified;
 document.querySelector('#currenttime').textContent = new Intl.DateTimeFormat("en-US", { dateStyle: "full"}).format(new Date());
 
-//Hidden time form submission
-try {
-  document.querySelector('#hiddentime').textContent = new Intl.DateTimeFormat("en-US", { dateStyle: "full"}).format(new Date());
-}catch(error) {console.log(error)
-}
 
 //hamburger menu
 function toggleMenu() {
