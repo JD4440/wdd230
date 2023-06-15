@@ -10,7 +10,7 @@ async function getBusinessData() {
   
   getBusinessData();
    
-   function displayDirectory (cards) {
+   function displayDirectory (directory) {
     
     const cards = document.querySelector('div.cards'); // select the output container element
 
@@ -18,14 +18,14 @@ async function getBusinessData() {
     directory.forEach((business) => {
       // Create elements to add to the div.cards element
       let card = document.createElement('section');
+      let logo = document.createElement('img');
       let h2 = document.createElement('h2');
-      let portrait = document.createElement('img');
       let dateofbirth = document.createElement('h3');
       let placeofbirth = document.createElement('h3');
 
   
       // Build the h2 content out to show the prophet's full name - finish the template string
-      h2.textContent = `${data.name}`;
+      h2.textContent = `${business.name}`;
       dateofbirth.textContent = `Date of Birth: ${prophet.birthdate}`;
       placeofbirth.textContent = `Place of Birth: ${prophet.birthplace}`;
 
