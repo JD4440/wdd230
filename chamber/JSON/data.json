@@ -1,19 +1,95 @@
 {
-    "directory": [
-      {
-        "name": "Golden Loaf Bakery",
-        "address": "4820 50 St, Elk Point",
-        "phone": "780-724-4404",
-        "membership": "Gold Member",
-        "website": "https://golden-loaf-bakery.business.site/"
-      },
-      {
-        "name": "ATB Financial",
-        "address": "4925 50 ST, Elk Point",
-        "phone": "780-724-3932",
-        "membership": "Bronze Member",
-        "website": "https://www.atb.com/personal/"
-      }
+  "directory": [
+    {
+      "name": "2nd Chance Trail Ride Society",
+      "address": "3202 57 Ave, Elk Point",
+      "phone": "780-724-3810",
+      "membership": "Non-Profit Member",
+      "website": "https://2ndctr.com/"
+    },
+    {
+      "name": "ATB Financial",
+      "address": "4925 50 ST, Elk Point",
+      "phone": "780-724-3932",
+      "membership": "Bronze Member",
+      "website": "https://www.atb.com/personal/"
+    },
+    {
+      "name": "Elk Point Insurance",
+      "address": "4826 50 Street, Elk Point",
+      "phone": "780-724-3926",
+      "membership": "Silver Member ",
+      "website": "https://www.elkpointinsurance.ca/"
+    },
+    {
+      "name": "Elk Point Tire",
+      "address": "4826 Railway Ave, Elk Point",
+      "phone": "780-210-8473",
+      "membership": "Gold Member ",
+      "website": "https://www.affordabletires.ca/"
+    },	
+    {
+      "name": "Golden Loaf Bakery",
+      "address": "4820 50 St, Elk Point",
+      "phone": "780-724-4404",
+      "membership": "Gold Member",
+      "website": "https://golden-loaf-bakery.business.site/"
+    },
+    {
+      "name": "Guardian",
+      "address": "4831 50 Street, Elk Point",
+      "phone": "780-724-3331",
+      "membership": "Silver Member ",
+      "website": "https://www.guardian-ida-remedysrx.ca/"
+    },
+    {
+      "name": "Northern Lights Library",
+      "address": "5618 48 Street, Elk Point",
+      "phone": "1-800-561-0387",
+      "membership": "Silver Member ",
+      "website": "https://www.nlls.ab.ca/"
+    },
+    {
+      "name": "Servus Credit Union",
+      "address": "4934 50 Ave, Elk Point",
+      "phone": "780-724-5900",
+      "membership": "Gold Member",
+      "website": "https://www.servus.ca/life"
+    },
+    {
+      "name": "Wozniak Bulk Fuel Services",
+      "address": "4505 57 Ave, Elk Point",
+      "phone": "780-724-2040",
+      "membership": "Bronze Member",
+      "website": "http://www.wozniakbulkfuelsales.com/"
+    }
+  ]
+}
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   
   
   
@@ -27,6 +103,5 @@
   
   
   
-    ]
-  }
+
   
