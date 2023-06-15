@@ -1,4 +1,5 @@
-const url = 'https://brotherblazzard.github.io/canvas-content/latter-day-prophets.json';
+//const url = 'http://localhost:8000/JSON/data.json';
+const url = 'https://jd4440.github.io/wdd230/chamber/JSON/data.json';
 
 async function getBusinessData() {
     const response = await fetch(url);
@@ -9,7 +10,7 @@ async function getBusinessData() {
   
   getBusinessData();
    
-   function displayDirectory (directory) {
+   function displayDirectory (cards) {
     
     const cards = document.querySelector('div.cards'); // select the output container element
 
