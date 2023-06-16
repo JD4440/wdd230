@@ -297,6 +297,44 @@ footer img {
   display: none;
 }
 
+/* Directory Page */
+
+.directory {
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+}
+
+.directory h2 {
+  padding: 10px;
+  min-width: 350px;
+}
+
+.directory section {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+  background-color: #549aa0ff;
+  display: flex;
+  flex-direction: column;
+}
+
+div.cards {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 20px;
+  column-gap: 20px;
+}
+
+.cards img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 200px;
+  height: auto;
+  padding: 10px;
+}
 
 
 
