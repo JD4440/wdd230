@@ -29,25 +29,26 @@ async function getBusinessData() {
   
       // Build the h2 content out to show the prophet's full name - finish the template string
       name.textContent = `${business.name}`;
-      address.textContent = `Date of Birth: ${business.address}`;
-      phone.textContent = `Place of Birth: ${business.phone}`;
-      membership.textContent = `Place of Birth: ${business.membership}`;
-      website.textContent = `Place of Birth: ${business.website}`;
+      address.textContent = `${business.address}`;
+      phone.textContent = `${business.phone}`;
+      membership.textContent = `${business.membership}`;
+      website.textContent = `${business.website}`;
       
 
   
       // Build the image portrait by setting all the relevant attribute
-      portrait.setAttribute('src', prophet.imageurl);
-      portrait.setAttribute('alt', `Portait of ${prophet.name} ${prophet.lastname}`);
-      portrait.setAttribute('loading', 'lazy');
-      portrait.setAttribute('width', '340');
-      portrait.setAttribute('height', '440');
+     // portrait.setAttribute('src', prophet.imageurl);
+     // portrait.setAttribute('alt', `Portait of ${prophet.name} ${prophet.lastname}`);
+     // portrait.setAttribute('loading', 'lazy');
+     // portrait.setAttribute('width', '340');
+     // portrait.setAttribute('height', '440');
   
       // Append the section(card) with the created elements
-      card.appendChild(h2);
-      card.appendChild(dateofbirth);
-      card.appendChild(placeofbirth);
-      card.appendChild(portrait);
+      card.appendChild(name);
+      card.appendChild(address);
+      card.appendChild(phone);
+      card.appendChild(membership);
+      card.appendChild(website);
   
       cards.appendChild(card);
     }) // end of forEach loop
