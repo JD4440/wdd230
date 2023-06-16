@@ -1,6 +1,7 @@
 {
   "directory": [
     {
+      "imageurl": "https://jd4440.github.io/wdd230/chamber/images/dir-2nd.jpg",
       "name": "2nd Chance Trail Ride Society",
       "address": "3202 57 Ave, Elk Point",
       "phone": "780-724-3810",
@@ -12,7 +13,8 @@
       "address": "4925 50 ST, Elk Point",
       "phone": "780-724-3932",
       "membership": "Bronze Member",
-      "website": "https://www.atb.com/personal/"
+      "website": "https://www.atb.com/personal/",
+      "imageurl": "https://jd4440.github.io/wdd230/chamber/images/dir-atb.png"
     },
     {
       "name": "Elk Point Insurance",

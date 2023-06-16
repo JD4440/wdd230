@@ -37,13 +37,14 @@ async function getBusinessData() {
 
   
       // Build the image portrait by setting all the relevant attribute
-     // portrait.setAttribute('src', prophet.imageurl);
-     // portrait.setAttribute('alt', `Portait of ${prophet.name} ${prophet.lastname}`);
-     // portrait.setAttribute('loading', 'lazy');
-     // portrait.setAttribute('width', '340');
-     // portrait.setAttribute('height', '440');
+        logo.setAttribute('src', business.imageurl);
+        logo.setAttribute('alt', `logo of ${business.name}`);
+        logo.setAttribute('loading', 'lazy');
+        logo.setAttribute('width', '340');
+        logo.setAttribute('height', '440');
   
       // Append the section(card) with the created elements
+      card.appendChild(logo);
       card.appendChild(name);
       card.appendChild(address);
       card.appendChild(phone);
