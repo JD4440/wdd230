@@ -19,15 +19,21 @@ async function getBusinessData() {
       // Create elements to add to the div.cards element
       let card = document.createElement('section');
       let logo = document.createElement('img');
-      let h2 = document.createElement('h2');
-      let dateofbirth = document.createElement('h3');
-      let placeofbirth = document.createElement('h3');
+      let name = document.createElement('h2');
+      let address= document.createElement('h3');
+      let phone = document.createElement('h3');
+      let membership = document.createElement('h3');
+      let website = document.createElement('h3');
+    
 
   
       // Build the h2 content out to show the prophet's full name - finish the template string
-      h2.textContent = `${business.name}`;
-      dateofbirth.textContent = `Date of Birth: ${prophet.birthdate}`;
-      placeofbirth.textContent = `Place of Birth: ${prophet.birthplace}`;
+      name.textContent = `${business.name}`;
+      address.textContent = `Date of Birth: ${business.address}`;
+      phone.textContent = `Place of Birth: ${business.phone}`;
+      membership.textContent = `Place of Birth: ${business.membership}`;
+      website.textContent = `Place of Birth: ${business.website}`;
+      
 
   
       // Build the image portrait by setting all the relevant attribute
