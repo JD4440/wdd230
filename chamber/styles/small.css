@@ -333,6 +333,13 @@ div.cards {
   column-gap: 20px;
 }
 
+div.list {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 20px;
+  column-gap: 20px;
+}
+
 .cards img {
   display: block;
   margin-left: auto;

@@ -27,6 +27,7 @@ async function getBusinessData() {
     displayDirectory(data.directory);
   }
   
+  //business cards
   getBusinessData();
    
    function displayDirectory (directory) {
@@ -75,3 +76,51 @@ async function getBusinessData() {
   } // end of function expression
 
   businessList = {};
+
+
+//list view
+  getBusinessData();
+   
+   function displayDirectory (directory) {
+    
+    const list = document.querySelector('div.list'); // select the output container element
+
+  
+    directory.forEach((business) => {
+      // Create elements to add to the div.cards element
+      let card = document.createElement('section');
+      let name = document.createElement('h2');
+      let address= document.createElement('h3');
+      let phone = document.createElement('h3');
+      let membership = document.createElement('h3');
+      let website = document.createElement('h3');
+    
+
+  
+      // Build the h2 content out to show the prophet's full name - finish the template string
+      name.textContent = `${business.name}`;
+      address.textContent = `${business.address}`;
+      phone.textContent = `${business.phone}`;
+      membership.textContent = `${business.membership}`;
+      website.textContent = `${business.website}`;
+      
+  
+      // Append the section(card) with the created elements
+      list.appendChild(name);
+      list.appendChild(address);
+      list.appendChild(phone);
+      list.appendChild(membership);
+      list.appendChild(website);
+  
+      list.appendChild(card);
+    }) // end of forEach loop
+  } // end of function expression
+
+  businessList = {};
+  
+
+
+
+
+
+ 
