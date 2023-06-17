@@ -1,7 +1,14 @@
 //const url = 'http://localhost:8000/JSON/data.json';
 const url = 'https://jd4440.github.io/wdd230/chamber/JSON/data.json';
 
-const cardbutton = document.querySelector("#card");
+async function getBusinessData() {
+  const response = await fetch(url);
+  const data = await response.json();
+  //console.table(data.directory);  // note that we reference the prophet array of the data object given the structure of the json file
+  displayDirectory(data.directory);
+}
+
+const cardbutton = document.querySelector("#grid");
 const listbutton = document.querySelector("#list");
 const display = document.querySelector("cards");
 
@@ -9,7 +16,7 @@ const display = document.querySelector("cards");
 
 cardbutton.addEventListener("click", () => {
 	// example using arrow function
-	display.classList.add("cards");
+	display.classList.add("grid");
 	display.classList.remove("list");
 });
 
@@ -17,16 +24,9 @@ listbutton.addEventListener("click", showList); // example using defined functio
 
 function showList() {
 	display.classList.add("list");
-	display.classList.remove("cards");
+	display.classList.remove("grid");
 }
 
-async function getBusinessData() {
-    const response = await fetch(url);
-    const data = await response.json();
-    //console.table(data.directory);  // note that we reference the prophet array of the data object given the structure of the json file
-    displayDirectory(data.directory);
-  }
-  
   //business cards
   getBusinessData();
    
@@ -74,6 +74,7 @@ async function getBusinessData() {
       cards.appendChild(card);
     }) // end of forEach loop
   } // end of function expression
+
 
 
 
