@@ -1,6 +1,25 @@
 //const url = 'http://localhost:8000/JSON/data.json';
 const url = 'https://jd4440.github.io/wdd230/chamber/JSON/data.json';
 
+const cardbutton = document.querySelector("#card");
+const listbutton = document.querySelector("#list");
+const display = document.querySelector("cards");
+
+// The following code could be written cleaner. How? We may have to simplfiy our HTMl and think about a default view.
+
+cardbutton.addEventListener("click", () => {
+	// example using arrow function
+	display.classList.add("cards");
+	display.classList.remove("list");
+});
+
+listbutton.addEventListener("click", showList); // example using defined function
+
+function showList() {
+	display.classList.add("list");
+	display.classList.remove("cards");
+}
+
 async function getBusinessData() {
     const response = await fetch(url);
     const data = await response.json();

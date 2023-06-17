@@ -299,6 +299,12 @@ footer img {
 
 /* Directory Page */
 
+.menu button {
+	padding: 1rem;
+	font-weight: 700;
+  background-color: #4b8349ff;
+}
+
 .directory {
   margin: 0 auto;
   display: block;
