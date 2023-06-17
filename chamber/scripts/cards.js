@@ -8,13 +8,13 @@ async function getBusinessData() {
   displayDirectory(data.directory);
 }
 
-const cardbutton = document.querySelector("#grid");
+const gridbutton = document.querySelector("#grid");
 const listbutton = document.querySelector("#list");
 const display = document.querySelector("cards");
 
 // The following code could be written cleaner. How? We may have to simplfiy our HTMl and think about a default view.
 
-cardbutton.addEventListener("click", () => {
+gridbutton.addEventListener("click", () => {
 	// example using arrow function
 	display.classList.add("grid");
 	display.classList.remove("list");
