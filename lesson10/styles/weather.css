@@ -2,7 +2,6 @@
 
 * {
     margin: 0 auto;
-    display: block;
     text-align: center;
     font-family: Roboto, Arial, Helvetica, sans-serif;
 }
@@ -22,6 +21,20 @@ footer {
 }
 
 main {
+	margin: 10px;
+	border: 5px solid rgba(0, 0, 0, 0.1);
+	padding: 1rem;
+	display: flex;
+	flex-direction: column;
+    align-items: center;
+}
+
+p {
     padding: 10px;
 }
+
+
+
+
+
 
