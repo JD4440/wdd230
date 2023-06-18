@@ -132,6 +132,11 @@ main {
 	grid-column-end: 13;
   }
 
+  
+  div.list section {
+	flex-direction: row;
+	align-items: center;
+  }
 
 
 

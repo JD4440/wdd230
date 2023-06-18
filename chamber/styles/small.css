@@ -335,9 +335,25 @@ div.cards {
 
 div.list {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   row-gap: 20px;
   column-gap: 20px;
+}
+
+div.list section {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 10px;
+}
+
+div.list section h2, h3 {
+  text-align: left;
+  
+}
+
+div.list section img {
+  display: none;
 }
 
 .cards img {
