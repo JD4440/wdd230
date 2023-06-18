@@ -347,11 +347,6 @@ div.list section {
   gap: 10px;
 }
 
-div.list section h2, h3 {
-  text-align: left;
-  
-}
-
 div.list section img {
   display: none;
 }
