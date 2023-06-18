@@ -45,7 +45,7 @@ gridbutton.addEventListener("click", () => {
     
 
   
-      // Build the h2 content out to show the prophet's full name - finish the template string
+ 
       name.textContent = `${business.name}`;
       address.textContent = `${business.address}`;
       phone.textContent = `${business.phone}`;
@@ -54,14 +54,14 @@ gridbutton.addEventListener("click", () => {
       
 
   
-      // Build the image portrait by setting all the relevant attribute
+
         logo.setAttribute('src', business.imageurl);
         logo.setAttribute('alt', `logo of ${business.name}`);
         logo.setAttribute('loading', 'lazy');
         logo.setAttribute('width', '340');
         logo.setAttribute('height', '440');
-  
-      // Append the section(card) with the created elements
+
+        
       card.appendChild(logo);
       card.appendChild(name);
       card.appendChild(address);
