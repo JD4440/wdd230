@@ -4,7 +4,7 @@ const url = 'https://jd4440.github.io/wdd230/chamber/JSON/data.json';
 async function getBusinessData() {
   const response = await fetch(url);
   const data = await response.json();
-  //console.table(data.directory);  // note that we reference the prophet array of the data object given the structure of the json file
+  //console.table(data.directory);  
   displayDirectory(data.directory);
 }
 
@@ -12,7 +12,7 @@ const gridbutton = document.querySelector("#grid");
 const listbutton = document.querySelector("#list");
 const display = document.querySelector("#business-container");
 
-// The following code could be written cleaner. How? We may have to simplfiy our HTMl and think about a default view.
+
 
 listbutton.addEventListener("click", () => {
   display.classList.remove('cards')
