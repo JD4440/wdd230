@@ -34,7 +34,7 @@ section {
 div.cards {
     display: flex;
     flex-wrap: wrap;
-    row-gap: 10px;
+    row-gap: 20px;
 }
 
 img {
