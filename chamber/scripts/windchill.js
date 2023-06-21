@@ -37,11 +37,6 @@ function displayResults(weatherData) {
 }
 
 
-
-
-
-
-
 // Temp is Celsius, Windseep is kph
 //<=50°F(10°C) and >3.0mph(4.83kmh)
 
