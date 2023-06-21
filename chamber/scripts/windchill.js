@@ -1,0 +1,40 @@
+// Temp is Celsius, Windseep is kph
+//<=50°F(10°C) and >3.0mph(4.83kmh)
+
+const temp = 5;
+const windSpeed = 15;
+
+function CelsiusToFarenheit (tempCelsius) {
+    let farenheit = (tempCelsius * 9 / 5) + 32;
+    return farenheit;
+}
+
+function ConvertKPHToMPH (kph) {
+    let mph = kph * 0.621371;
+    return mph;
+}
+
+function CalculateWindChill (t, s) {
+    let windChill = 35.74 + 0.6215 * t - 35.75 * (s ** 0.16) + 0.4275 * t * (s ** 0.16);
+    return windChill;
+}
+
+document.querySelector('#tempCurrent').innerHTML = temp
+document.querySelector('#windSpeed').innerHTML = windSpeed
+
+let tempfarenheit = CelsiusToFarenheit(temp)
+let windSpeedMph = ConvertKPHToMPH (windSpeed)
+
+
+if (tempfarenheit <= 50 && windSpeedMph >3) {
+    let windChill = CalculateWindChill(tempfarenheit, windSpeedMph)
+    document.querySelector('#windChill').innerHTML = Math.floor((windChill-32)*(5/9))
+}
+else {
+    document.querySelector('#windChill').innerHTML = "N/A"
+}
+
+
+
+
+

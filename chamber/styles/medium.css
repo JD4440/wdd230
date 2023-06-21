@@ -1,0 +1,193 @@
+@media only screen and (min-width: 640px) {
+  
+.join {
+	display: block;
+}
+main {
+	grid-template-columns: repeat(12, 1fr);
+	grid-template-rows: repeat(5, 1fr);
+}
+
+.hero {
+	grid-row-start: 1;
+	grid-column-start: 1;
+	grid-column-end: 13;
+  }
+  
+.event {
+	grid-row-start: 5;
+	grid-column-start: 1;
+	grid-column-end: 8;
+  }
+  
+.weather {
+	grid-row-start: 5;
+	grid-column-start: 8;
+	grid-column-end: 13;
+ }
+  
+.news {
+	grid-row-start: 2;
+	grid-column-start: 1;
+	grid-column-end: 13;
+  }
+  
+.sec-spotlight {
+	display: flex;
+	flex-direction: row;
+	grid-row-start: 3;
+	grid-column-start: 1;
+	grid-column-end: 13;
+}
+
+.div-spotlight1 {
+	flex: 1 50%;
+}
+
+.div-spotlight2 {
+	flex: 1 50%;
+}
+
+.join {
+	grid-row-start: 4;
+	grid-column-start: 1;
+	grid-column-end: 13;
+}
+
+.joinus {
+	background-color: #f3672bff;
+	border-radius: 10px;
+	padding: 1px;
+}
+
+.top-footer {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	justify-content: space-between;
+	margin: 2em;
+}
+
+.bottom-footer {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	margin: 2em;
+}
+
+.history {
+	grid-row-start: 1;
+	grid-column-start: 1;
+	grid-column-end: 5;
+  }
+
+  .demographics {
+	grid-row-start: 2;
+	grid-column-start: 1;
+	grid-column-end: 5;
+  }
+
+  .haying{
+	grid-row-start: 1;
+	grid-column-start: 5;
+	grid-column-end: 13;
+  }
+
+  .lake{
+	grid-row-start: 2;
+	grid-column-start: 5;
+	grid-column-end: 13;
+  }
+
+  .library{
+	grid-row-start: 3;
+	grid-column-start: 1;
+	grid-column-end: 13;
+  }
+
+  .park{
+	grid-row-start: 4;
+	grid-column-start: 1;
+	grid-column-end: 13;
+  }
+
+  .canada{
+	grid-row-start: 5;
+	grid-column-start: 1;
+	grid-column-end: 13;
+  }
+
+  .hover:hover {box-shadow: 0 0 50px #333;}
+  /* rounded corners - boxmodel */
+  .rocorn {border-radius: 15px 15px;}
+
+.join-grid {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+
+.join-form {
+	display: flex;
+	flex-direction: column;
+
+}
+
+join-table {
+	display: flex;
+	flex-direction: column;
+}
+
+td {
+	font-size: 20px;
+  }
+  
+  th {
+	font-size: 20px;
+  }
+
+ .thank-you {
+	grid-row-start: 1;
+	grid-column-start: 1;
+	grid-column-end: 13;
+  }
+
+  .thank-you-message {
+	grid-row-start: 2;
+	grid-column-start: 1;
+	grid-column-end: 13;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+

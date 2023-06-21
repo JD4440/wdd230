@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" >
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <meta
+      name="description"
+      content="Elk Point Chamber of Commerce proudly serving the community of Elk Point, Alberta">
+    <link rel="shortcut icon" href="favicon.ico">
+    <title>Elk Point Chamber of Commerce</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css" >
+    <link rel="stylesheet" href="styles/small.css" >
+    <link rel="stylesheet" href="styles/medium.css" >
+    <link rel="stylesheet" href="styles/large.css" >
+  </head>
+  <body>
+    <header>
+      <div id="banner">
+        <h3>🌳Come join us for the chamber meet and greet Wednesday at 7:00 p.m🌳</h3>
+      </div>
+      <div>
+      <img class="logo" src="images/logo.webp" alt="Elk Point Chamber Logo">
+      <h1 class="chamberheading">Elk Point Chamber of Commerce</h1>
+      <ul class="social">
+        <li class="nav-social-link">
+            <a href="https://facebook.com" target="_blank"><img src="images/facebook.png" alt="Facebook"></a>
+        </li>
+        <li class="nav-social-link">
+            <a href="https://twitter.com" target="_blank"><img src="images/twitter.png" alt="Twitter"></a>
+        </li>
+      </ul>
+      <button class="hamburger">
+        <span>
+            &#9776;
+        </span>
+        <span>
+            X
+        </span>
+      </button>
+      </div>
+        <nav>
+          <ul class="nav-menu">
+            <li class="nav-link">
+              <a href="index.html" class="nav-link">Home Page</a>
+            </li>
+            <li class="nav-link">
+              <a href="discover.html" class="nav-link">Discover</a>
+            </li>
+            <li class="nav-link">
+              <a href="directory.html" class="nav-link">Directory</a>
+            </li>
+            <li class="nav-link">
+              <a href="join.html" class="nav-link">Join</a>
+            </li>
+            <li class="nav-link">
+              <a href="./" class="nav-link">Contact</a>
+            </li>
+        </ul>
+      </nav>
+      <div><p id="currenttime" class="design"></p></div>
+    </header>
+    
+    
+    <main>
+    <section class="hero">
+        <picture>
+          <source media="(max-width:700px)" srcset="images/hero-small.jpg">
+          <source media="(max-width:1000px)" srcset="images/hero-medium.jpg">
+          <source media="(max-width:2000px)" srcset="images/hero-large.jpg">
+          <img class="heroimage" src="images/hero-org.jpg" alt="Elk Point Town Photo">
+        </picture>
+        <h2 class="heroh2">Welcome to Elk Point</h2>
+        <h2 class="herojoinchamber"><a href="join.html">Join the Chamber</a></h2>
+    </section>
+    
+    <section class="event place-holder">
+        <h2>Quilted Legacy</h2>
+        <h3>Grand Opening!</h3>
+        <br>
+        <p>Join us at Quilted Legacy to celebrate our grand opening! Thursday 9am - 5pm, all gabric 50% off.</p>
+    </section>
+    
+    <section class="weather place-holder">
+        <h2>Weather</h2>
+        <h2 class="temperature"><span id="tempCurrent"></span>°C</h2>
+        <p><span id="windSpeed"></span> km/h</p>
+        <p><span id="windChill"></span></p>
+    </section>
+    
+    <section class="news place-holder">
+        <h2>News Release</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium incidunt fugiat ipsam aspernatur quisquam harum sit corrupti eligendi cumque deserunt, minus at, ipsum maxime, quidem beatae. Minus necessitatibus nemo el?</p>
+    </section>
+    
+    <section class="sec-spotlight">
+        <div class="div-spotlight1 place-holder">
+            <h2>Empress Family Restaurant</h2>
+            <img class ="spotlightimage" src="images/empress.jpg" alt="Empress resturant photo">
+            <p>info@empress.com</p>
+            <p>780-645-1234 | Website</p>
+          </div>
+        <div class="div-spotlight2 place-holder">
+          <h2>Golden Loaf Bakery</h2>
+          <img class ="spotlightimage" src="images/goldenbakery.jpg" alt="Golden Loaf bakery photo">
+          <p>info@goldenloaf.com</p>
+          <p>780-645-1234 | Website</p>
+        </div>
+        <div class="div-spotlight3 place-holder">
+          <h2>ATB Financial</h2>
+          <img class ="spotlightimage" src="images/atb.jpg" alt="ATB Financial Photo photo">
+          <p>info@atbfinancial.com</p>
+          <p>780-645-1234 | Website</p>
+        </div>
+    </section>
+    
+    <section class="join place-holder">
+      <h2><a class="joinus" href="join.html">Join Us!</a></h2>
+      <p>Discover how to join the Chamber of Commerce, and how it will benifit your organization! </p>
+    </section>
+    </main>
+
+    
+    <footer>
+      <div class="top-footer">
+        <div>
+          <img src="images/logo.webp" alt="Elk Point Chamber Logo">
+        </div>
+        <div>
+          <p>Elk Point Chamber of Commerce</p>
+          <address>4925 50 St, Elk Point, AB T0A 1A0</address>    
+        </div>
+        <div>
+            <p>📧 info@elkpointchamber.ca</p>
+            <p>📞 780-645-2919</p>
+            <a href="https://goo.gl/maps/FNQVBvcWWPxhNGk26" id="map-link">📍Location Map</a>    
+        </div>
+      </div>
+
+      <div>
+        <div class="bottom-footer">
+          <p>&copy;<span id="footerdate"></span>  Elk Point Chamber</p> 
+          <p class="divider"> | </p>   
+          <p>Shawn Jensen</p>
+          <p class="divider"> | </p> 
+          <p> WDD 230 Project</p>
+          <p class="divider"> | </p> 
+        </div>
+        <div>
+        <p>Last Updated: <span id="lastupdated"></span></p>
+        </div>
+      </div>
+    </footer>
+    
+    
+    <script src="scripts/scripts.js"></script>
+    <script src="scripts/windchill.js"></script>
+  </body>
+</html>
