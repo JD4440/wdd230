@@ -168,6 +168,21 @@ main {
   padding: 10px;
 }
 
+.weather {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-items: center;
+  gap: 5px;
+  width: fit-content;
+
+}
+
+.weather h2 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
 .hero {
   position: relative;
   }

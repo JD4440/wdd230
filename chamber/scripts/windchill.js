@@ -2,6 +2,7 @@
 const currentTemp = document.querySelector('#current-temp');
 const weatherIcon = document.querySelector('#weather-icon');
 const captionDesc = document.querySelector('figcaption');
+const windSpeed = document.querySelector('#wind-speed');
 
 // lat: 53.90017000, lon: -110.90170000 of ELk Point Alberta
 const url = 'https://api.openweathermap.org/data/2.5/weather?lat=53.90017000&lon=-110.90170000&units=metric&appid=93c38752305ca77c6133640779c32982';
@@ -26,8 +27,8 @@ async function apiFetch() {
 apiFetch();
 
 function displayResults(weatherData) {
-  currentTemp.innerHTML = `<strong>${weatherData.main.temp.toFixed(0)}</strong>`; 
-
+  currentTemp.innerHTML = `<strong>${weatherData.main.temp.toFixed(1)}</strong>`; 
+  windSpeed.innerHTML = `<strong>${weatherData.wind.speed.toFixed(1)}</strong>`; 
   const iconsrc = `https://openweathermap.org/img/w/${weatherData.weather[0].icon}.png`;
   const desc = weatherData.weather[0].description;
 
@@ -41,7 +42,7 @@ function displayResults(weatherData) {
 //<=50°F(10°C) and >3.0mph(4.83kmh)
 
 const temp = 5;
-const windSpeed = 15;
+const windspeed = 15;
 
 function CelsiusToFarenheit (tempCelsius) {
     let farenheit = (tempCelsius * 9 / 5) + 32;
