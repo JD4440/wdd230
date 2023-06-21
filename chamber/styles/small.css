@@ -183,7 +183,6 @@ main {
   grid-column-end: 3;
 }
 
-
 .hero {
   position: relative;
   }
@@ -312,6 +311,80 @@ footer img {
 .div-spotlight3 {
   display: none;
 }
+
+/* Directory Page */
+
+.menu button {
+	padding: 1rem;
+	font-weight: 700;
+  background-color: #4b8349ff;
+}
+
+.directory {
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+}
+
+.directory h2 {
+  padding: 10px;
+  min-width: 350px;
+}
+
+.directory section {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+  background-color: #549aa0ff;
+  display: flex;
+  flex-direction: column;
+}
+
+div.cards {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 20px;
+  column-gap: 20px;
+}
+
+div.list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  column-gap: 20px;
+}
+
+div.list section {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 10px;
+}
+
+div.list section img {
+  display: none;
+}
+
+.cards img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 200px;
+  height: auto;
+  padding: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 

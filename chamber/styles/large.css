@@ -1,142 +1,148 @@
 @media only screen and (min-width: 960px) {
 
-.div-spotlight3 {
-    display: block;
-
-}
-
-.hamburger {
-    display: none;
-}
-
-.nav-menu {
-    display: flex;
-    justify-content: space-around;
-    background-color: #4b8349ff;
-   
-}
-
-.nav-menu a {
-    align-items: center;
-    color: white;
-}
-
-.nav-menu a:hover {
-    border-radius: 50px;
-}
-
-
-
-main {
-    margin: 10px;
-    display: grid;
-	grid-template-columns: repeat(12, 1fr);
-	grid-template-rows: repeat(3, 1fr);
-    
+	.div-spotlight3 {
+		display: block;
 	
-}
-
-.hero {
-	grid-row-start: 1;
-    grid-row-end: 3;
-	grid-column-start: 4;
-	grid-column-end: 10;
-}
-
-.event {
-	grid-row-start: 1;
-	grid-column-start: 1;
-    grid-column-end: 4;
-}
-  
-.weather {
-	grid-row-start: 2;
-	grid-column-start: 1;
-    grid-column-end: 4;
-}
-  
-.news {
-    grid-row-start: 3;
-    grid-row-end: 4;
-	grid-column-start: 4;
-	grid-column-end: 10;
-}
-  
-.sec-spotlight {
-	display: flex;
-	flex-direction: column;
-	grid-row-start: 1;
-    grid-row-end: 4;
-	grid-column-start: 13;
-	grid-column-end: 10;
-}
-
-.div-spotlight1 {
-	flex: 1 33%;
-}
-
-.div-spotlight2 {
-	flex: 1 33%;
-}
-
-.div-spotlight3 {
-	flex: 1 33%;
-}
-
-.join {
-    grid-row-start: 3;
-    grid-row-end: 4;
-	grid-column-start: 1;
-	grid-column-end: 4;
-  }
-
-  .history {
-	grid-row-start: 1;
-	grid-column-start: 1;
-	grid-column-end: 4;
-  }
-
-  .demographics {
-	grid-row-start: 2;
-	grid-column-start: 1;
-	grid-column-end: 4;
-  }
-
-  .haying{
-	grid-row-start: 1;
-	grid-column-start: 4;
-	grid-column-end: 13;
-  }
-
-  .lake{
-	grid-row-start: 2;
-	grid-column-start: 4;
-	grid-column-end: 13;
-  }
-
-  .library{
-	grid-row-start: 3;
-	grid-column-start: 1;
-	grid-column-end: 13;
-  }
-
-  .park{
-	grid-row-start: 4;
-	grid-column-start: 1;
-	grid-column-end: 13;
-  }
-
-  .canada{
-	grid-row-start: 5;
-	grid-column-start: 1;
-	grid-column-end: 13;
-  }
-
-
-
-
-
-
-
-
-}
+	}
+	
+	.hamburger {
+		display: none;
+	}
+	
+	.nav-menu {
+		display: flex;
+		justify-content: space-around;
+		background-color: #4b8349ff;
+	   
+	}
+	
+	.nav-menu a {
+		align-items: center;
+		color: white;
+	}
+	
+	.nav-menu a:hover {
+		border-radius: 50px;
+	}
+	
+	
+	
+	main {
+		margin: 10px;
+		display: grid;
+		grid-template-columns: repeat(12, 1fr);
+		grid-template-rows: repeat(3, 1fr);
+		
+		
+	}
+	
+	.hero {
+		grid-row-start: 1;
+		grid-row-end: 3;
+		grid-column-start: 4;
+		grid-column-end: 10;
+	}
+	
+	.event {
+		grid-row-start: 1;
+		grid-column-start: 1;
+		grid-column-end: 4;
+	}
+	  
+	.weather {
+		grid-row-start: 2;
+		grid-column-start: 1;
+		grid-column-end: 4;
+	}
+	  
+	.news {
+		grid-row-start: 3;
+		grid-row-end: 4;
+		grid-column-start: 4;
+		grid-column-end: 10;
+	}
+	  
+	.sec-spotlight {
+		display: flex;
+		flex-direction: column;
+		grid-row-start: 1;
+		grid-row-end: 4;
+		grid-column-start: 13;
+		grid-column-end: 10;
+	}
+	
+	.div-spotlight1 {
+		flex: 1 33%;
+	}
+	
+	.div-spotlight2 {
+		flex: 1 33%;
+	}
+	
+	.div-spotlight3 {
+		flex: 1 33%;
+	}
+	
+	.join {
+		grid-row-start: 3;
+		grid-row-end: 4;
+		grid-column-start: 1;
+		grid-column-end: 4;
+	  }
+	
+	  .history {
+		grid-row-start: 1;
+		grid-column-start: 1;
+		grid-column-end: 4;
+	  }
+	
+	  .demographics {
+		grid-row-start: 2;
+		grid-column-start: 1;
+		grid-column-end: 4;
+	  }
+	
+	  .haying{
+		grid-row-start: 1;
+		grid-column-start: 4;
+		grid-column-end: 13;
+	  }
+	
+	  .lake{
+		grid-row-start: 2;
+		grid-column-start: 4;
+		grid-column-end: 13;
+	  }
+	
+	  .library{
+		grid-row-start: 3;
+		grid-column-start: 1;
+		grid-column-end: 13;
+	  }
+	
+	  .park{
+		grid-row-start: 4;
+		grid-column-start: 1;
+		grid-column-end: 13;
+	  }
+	
+	  .canada{
+		grid-row-start: 5;
+		grid-column-start: 1;
+		grid-column-end: 13;
+	  }
+	
+	  
+	  div.list section {
+		flex-direction: row;
+		align-items: center;
+	  }
+	
+	
+	
+	
+	
+	
+	
+	}
+	
