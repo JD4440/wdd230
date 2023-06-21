@@ -1,6 +1,7 @@
 {
   "directory": [
     {
+      "imageurl": "https://jd4440.github.io/wdd230/chamber/images/dir-2nd.jpg",
       "name": "2nd Chance Trail Ride Society",
       "address": "3202 57 Ave, Elk Point",
       "phone": "780-724-3810",
@@ -8,6 +9,7 @@
       "website": "https://2ndctr.com/"
     },
     {
+      "imageurl": "https://jd4440.github.io/wdd230/chamber/images/dir-atb.png",
       "name": "ATB Financial",
       "address": "4925 50 ST, Elk Point",
       "phone": "780-724-3932",
@@ -15,6 +17,7 @@
       "website": "https://www.atb.com/personal/"
     },
     {
+      "imageurl": "https://jd4440.github.io/wdd230/chamber/images/dir-insurance.png",
       "name": "Elk Point Insurance",
       "address": "4826 50 Street, Elk Point",
       "phone": "780-724-3926",
@@ -22,6 +25,7 @@
       "website": "https://www.elkpointinsurance.ca/"
     },
     {
+      "imageurl": "https://jd4440.github.io/wdd230/chamber/images/dir-ept.jpg",
       "name": "Elk Point Tire",
       "address": "4826 Railway Ave, Elk Point",
       "phone": "780-210-8473",
@@ -29,6 +33,7 @@
       "website": "https://www.affordabletires.ca/"
     },	
     {
+      "imageurl": "https://jd4440.github.io/wdd230/chamber/images/dir-golden.png",
       "name": "Golden Loaf Bakery",
       "address": "4820 50 St, Elk Point",
       "phone": "780-724-4404",
@@ -36,6 +41,7 @@
       "website": "https://golden-loaf-bakery.business.site/"
     },
     {
+      "imageurl": "https://jd4440.github.io/wdd230/chamber/images/dir-guardian.png",
       "name": "Guardian",
       "address": "4831 50 Street, Elk Point",
       "phone": "780-724-3331",
@@ -43,6 +49,7 @@
       "website": "https://www.guardian-ida-remedysrx.ca/"
     },
     {
+      "imageurl": "https://jd4440.github.io/wdd230/chamber/images/dir-library.png",
       "name": "Northern Lights Library",
       "address": "5618 48 Street, Elk Point",
       "phone": "1-800-561-0387",
@@ -50,6 +57,7 @@
       "website": "https://www.nlls.ab.ca/"
     },
     {
+      "imageurl": "https://jd4440.github.io/wdd230/chamber/images/dir-servus.png",
       "name": "Servus Credit Union",
       "address": "4934 50 Ave, Elk Point",
       "phone": "780-724-5900",
@@ -57,6 +65,7 @@
       "website": "https://www.servus.ca/life"
     },
     {
+      "imageurl": "https://jd4440.github.io/wdd230/chamber/images/dir-wbfs.png",
       "name": "Wozniak Bulk Fuel Services",
       "address": "4505 57 Ave, Elk Point",
       "phone": "780-724-2040",
@@ -65,6 +74,7 @@
     }
   ]
 }
+
 
 
   
