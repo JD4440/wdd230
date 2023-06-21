@@ -2,12 +2,30 @@
 const url = 'https://jd4440.github.io/wdd230/chamber/JSON/data.json';
 
 async function getBusinessData() {
-    const response = await fetch(url);
-    const data = await response.json();
-    //console.table(data.directory);  // note that we reference the prophet array of the data object given the structure of the json file
-    displayDirectory(data.directory);
-  }
-  
+  const response = await fetch(url);
+  const data = await response.json();
+  //console.table(data.directory);  
+  displayDirectory(data.directory);
+}
+
+const gridbutton = document.querySelector("#grid");
+const listbutton = document.querySelector("#list");
+const display = document.querySelector("#business-container");
+
+
+
+listbutton.addEventListener("click", () => {
+  display.classList.remove('cards')
+  display.classList.add("list");
+})
+
+gridbutton.addEventListener("click", () => {
+  display.classList.remove("list");
+  display.classList.add('cards')
+})
+
+
+  //business cards
   getBusinessData();
    
    function displayDirectory (directory) {
@@ -19,32 +37,39 @@ async function getBusinessData() {
       // Create elements to add to the div.cards element
       let card = document.createElement('section');
       let logo = document.createElement('img');
-      let h2 = document.createElement('h2');
-      let dateofbirth = document.createElement('h3');
-      let placeofbirth = document.createElement('h3');
+      let name = document.createElement('h2');
+      let address= document.createElement('h3');
+      let phone = document.createElement('h3');
+      let membership = document.createElement('h3');
+      let website = document.createElement('h3');
+    
 
   
-      // Build the h2 content out to show the prophet's full name - finish the template string
-      h2.textContent = `${business.name}`;
-      dateofbirth.textContent = `Date of Birth: ${prophet.birthdate}`;
-      placeofbirth.textContent = `Place of Birth: ${prophet.birthplace}`;
+ 
+      name.textContent = `${business.name}`;
+      address.textContent = `${business.address}`;
+      phone.textContent = `${business.phone}`;
+      membership.textContent = `${business.membership}`;
+      website.textContent = `${business.website}`;
+      
 
   
-      // Build the image portrait by setting all the relevant attribute
-      portrait.setAttribute('src', prophet.imageurl);
-      portrait.setAttribute('alt', `Portait of ${prophet.name} ${prophet.lastname}`);
-      portrait.setAttribute('loading', 'lazy');
-      portrait.setAttribute('width', '340');
-      portrait.setAttribute('height', '440');
-  
-      // Append the section(card) with the created elements
-      card.appendChild(h2);
-      card.appendChild(dateofbirth);
-      card.appendChild(placeofbirth);
-      card.appendChild(portrait);
+
+        logo.setAttribute('src', business.imageurl);
+        logo.setAttribute('alt', `logo of ${business.name}`);
+        logo.setAttribute('loading', 'lazy');
+        logo.setAttribute('width', '340');
+        logo.setAttribute('height', '440');
+
+        
+      card.appendChild(logo);
+      card.appendChild(name);
+      card.appendChild(address);
+      card.appendChild(phone);
+      card.appendChild(membership);
+      card.appendChild(website);
   
       cards.appendChild(card);
     }) // end of forEach loop
   } // end of function expression
 
-  businessList = {};
