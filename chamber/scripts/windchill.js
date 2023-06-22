@@ -24,33 +24,56 @@ async function apiFetch() {
   }
 }
 
-apiFetch();
+
 
 function displayResults(weatherData) {
-  currentTemp.innerHTML = `<strong>${weatherData.main.temp.toFixed(1)}</strong>`; 
-  windSpeed.innerHTML = `<strong>${weatherData.wind.speed.toFixed(1)}</strong>`; 
+  currentTemp.innerHTML = `${weatherData.main.temp.toFixed(1)}`; 
+  windSpeed.innerHTML = `${(weatherData.wind.speed.toFixed(1)) * 3.6}`; 
+    
   const iconsrc = `https://openweathermap.org/img/w/${weatherData.weather[0].icon}.png`;
   const desc = weatherData.weather[0].description;
 
   weatherIcon.setAttribute('src', iconsrc);
   weatherIcon.setAttribute('alt', desc);
   captionDesc.textContent = desc;
+
+
+    
+    let tempfarenheit = CelsiusToFarenheit(currentTemp.innerHTML)
+
+    let windSpeedMph = ConvertMSToMPH(windSpeed.innerHTML)
+
+  // display windchill
+  
+    if (tempfarenheit <= 50 && windSpeedMph >3) {
+        console.log (tempfarenheit)
+        console.log (windSpeedMph)
+        let windChill = CalculateWindChill(tempfarenheit, windSpeedMph)
+        document.querySelector('#windChill').innerHTML = Math.floor((windChill-32)*(5/9))
+    }
+    else {
+        document.querySelector('#windChill').innerHTML = "N/A"
+    }
+
+
+
+
 }
 
 
 // Temp is Celsius, Windseep is kph
 //<=50Â°F(10Â°C) and >3.0mph(4.83kmh)
 
-const temp = 5;
-const windspeed = 15;
+
+
 
 function CelsiusToFarenheit (tempCelsius) {
     let farenheit = (tempCelsius * 9 / 5) + 32;
     return farenheit;
 }
 
-function ConvertKPHToMPH (kph) {
-    let mph = kph * 0.621371;
+function ConvertMSToMPH(windspeed) {
+    let mph = windspeed * 2.2369362920544 ;
     return mph;
 }
 
@@ -59,22 +82,8 @@ function CalculateWindChill (t, s) {
     return windChill;
 }
 
-document.querySelector('#tempCurrent').innerHTML = temp
-document.querySelector('#windSpeed').innerHTML = windSpeed
-
-let tempfarenheit = CelsiusToFarenheit(temp)
-let windSpeedMph = ConvertKPHToMPH (windSpeed)
-
-
-if (tempfarenheit <= 50 && windSpeedMph >3) {
-    let windChill = CalculateWindChill(tempfarenheit, windSpeedMph)
-    document.querySelector('#windChill').innerHTML = Math.floor((windChill-32)*(5/9))
-}
-else {
-    document.querySelector('#windChill').innerHTML = "N/A"
-}
 
 
 
 
-
+apiFetch();

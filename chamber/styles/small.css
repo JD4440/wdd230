@@ -174,7 +174,7 @@ main {
   align-items: center;
   justify-items: center;
   gap: 5px;
-  width: fit-content;
+  width: 100%;
 
 }
 
@@ -328,7 +328,6 @@ footer img {
 
 .directory h2 {
   padding: 10px;
-  min-width: 350px;
 }
 
 .directory section {

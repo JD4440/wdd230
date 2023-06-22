@@ -160,6 +160,11 @@
 		grid-column-start: 1;
 		grid-column-end: 13;
 	  }
+
+	/* Directory Page */
+	.directory h2 {
+	min-width: 360px;
+	}
 	
 	
 	
