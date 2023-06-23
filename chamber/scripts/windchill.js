@@ -24,11 +24,9 @@ async function apiFetch() {
   }
 }
 
-
-
 function displayResults(weatherData) {
   currentTemp.innerHTML = `${weatherData.main.temp.toFixed(1)}`; 
-  windSpeed.innerHTML = `${(weatherData.wind.speed.toFixed(1)) * 3.6}`; 
+  windSpeed.innerHTML = `${((weatherData.wind.speed) * 3.6).toFixed(1)}`;
     
   const iconsrc = `https://openweathermap.org/img/w/${weatherData.weather[0].icon}.png`;
   const desc = weatherData.weather[0].description;
@@ -37,8 +35,6 @@ function displayResults(weatherData) {
   weatherIcon.setAttribute('alt', desc);
   captionDesc.textContent = desc;
 
-
-    
     let tempfarenheit = CelsiusToFarenheit(currentTemp.innerHTML)
 
     let windSpeedMph = ConvertMSToMPH(windSpeed.innerHTML)
@@ -53,19 +49,7 @@ function displayResults(weatherData) {
     }
     else {
         document.querySelector('#windChill').innerHTML = "N/A"
-    }
-
-
-
-
-}
-
-
-// Temp is Celsius, Windseep is kph
-//<=50Â°F(10Â°C) and >3.0mph(4.83kmh)
-
-
-
+    }}
 
 function CelsiusToFarenheit (tempCelsius) {
     let farenheit = (tempCelsius * 9 / 5) + 32;
@@ -81,9 +65,6 @@ function CalculateWindChill (t, s) {
     let windChill = 35.74 + 0.6215 * t - 35.75 * (s ** 0.16) + 0.4275 * t * (s ** 0.16);
     return windChill;
 }
-
-
-
 
 
 apiFetch();
