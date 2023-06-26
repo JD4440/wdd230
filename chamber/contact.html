@@ -65,71 +65,56 @@
     </header>
     
     
-    <main>
-    <section class="hero">
-        <picture>
-          <source media="(max-width:700px)" srcset="images/hero-small.jpg">
-          <source media="(max-width:1000px)" srcset="images/hero-medium.jpg">
-          <source media="(max-width:2000px)" srcset="images/hero-large.jpg">
-          <img class="heroimage" src="images/hero-org.jpg" alt="Elk Point Town Photo">
-        </picture>
-        <h2 class="heroh2">Welcome to Elk Point</h2>
-        <h2 class="herojoinchamber"><a href="join.html">Join the Chamber</a></h2>
-    </section>
-    
-    <section class="event place-holder">
-        <h2>Quilted Legacy</h2>
-        <h3>Grand Opening!</h3>
-        <br>
-        <p>Join us at Quilted Legacy to celebrate our grand opening! Thursday 9am - 5pm, all fabric 50% off.</p>
-    </section>
-    
-    <section class="weather place-holder">
-        <h2>Weather</h2>
-        <h3><span id="current-temp"></span> °C<h3>
-        <figure>
-            <img src="" alt="" id="weather-icon" />
-        <figcaption></figcaption>
-        </figure>
-        <h4>Current Windspeed</h4>
-        <p><span id="wind-speed"></span> km/h</p>
-        <h4>Current Windchill</h4>
-        <p><span id="windChill"></span></p>
+    <main class="contact-grid">
 
-    </section>
-    
-    <section class="news place-holder">
-        <h2>News Release</h2><br>
-        <h3>Teddy for a Toonie</h3>
-        <p>ATB Financial teddy for a toonie fundraiser had another successful year thanks to the community and its support. Over $3,000 was raised in Elk Point between teddy bear sales, bake sale, BBQ, the teddy and quilt raffles. ATB will be matching the raised amount of each of the branches and donating the funds to the childrens hospital.</p>
-    </section>
-    
-    <section class="sec-spotlight">
-        <div class="div-spotlight1 place-holder">
-            <h2>Empress Family Restaurant</h2>
-            <img class ="spotlightimage" src="images/empress.jpg" alt="Empress resturant photo">
-            <p>info@empress.com</p>
-            <p>780-645-1234 | Website</p>
-          </div>
-        <div class="div-spotlight2 place-holder">
-          <h2>Golden Loaf Bakery</h2>
-          <img class ="spotlightimage" src="images/goldenbakery.jpg" alt="Golden Loaf bakery photo">
-          <p>info@goldenloaf.com</p>
-          <p>780-645-1234 | Website</p>
-        </div>
-        <div class="div-spotlight3 place-holder">
-          <h2>ATB Financial</h2>
-          <img class ="spotlightimage" src="images/atb.jpg" alt="ATB Financial Photo photo">
-          <p>info@atbfinancial.com</p>
-          <p>780-645-1234 | Website</p>
-        </div>
-    </section>
-    
-    <section class="join place-holder">
-      <h2><a class="joinus" href="join.html">Join Us!</a></h2><br>
-      <p>Discover how to join the Chamber of Commerce, and how it will benifit your organization! </p>
-    </section>
-    </main>
+      <form class="join-form">
+        <section class="h2-join">
+          <h2>Join the Elk Point Chamber of Commerce</h2>
+          </section>
+        <label for="full-name">Name:</label>
+        <input type="text" id="first-name" name="first-name" required><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required placeholder="youremail@outlook.com"><br>
+
+        <fieldset><legend>Purpose</legend>
+        <div class="radioInstruction">Please select one: </div>
+            <label class="sbs"><input type="radio" name="inquiry" value="gi" required> General Inquiry</label>
+            <label class="sbs"><input type="radio" name="inquiry" value="ws" required> Website Suggestion</label>
+            <label class="sbs"><input type="radio" name="inquiry" value="gf" required> General Feedback</label>
+        </fieldset>
+        <label for="inquiry-description">Inquiry Details</label>
+        <textarea id="business-description" name="business-description" rows="4" cols="50"></textarea><br>
+  
+        <input type="submit" value="Submit your inquiry">
+        <input type="hidden" id="hiddentime">
+      </form>
+
+        <section class="place-holder contact-team">
+          <figure class="version-two">
+              <img src="images/emp1.jpg" alt="Employee one">
+              <figcaption> Lela Jacobinson</figcaption>
+              <figcaption> Chamber President</figcaption>
+          </figure>
+          <figure class="version-two">
+              <img src="images/emp2.jpg" alt="Employee Two">
+              <figcaption>Deanna Crusher</figcaption>
+              <figcaption> Chamber Treasurer</figcaption>
+          </figure>
+          <figure class="version-two">
+              <img src="images/emp3.jpg" alt="Employee Three">
+              <figcaption> William Conrad</figcaption>
+              <figcaption> Chamber Secretary</figcaption>
+          </figure>
+      </section>
+
+        <section class="place-holder contact-info">
+          <h1 class="grid-h1">Contact Information</h1>
+          <h3>✉️ 4925 50 St, Elk Point, AB T0A 1A0 <br>📧 info@elkpointchamber.ca <br>📞 780-645-2919</h3><br>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9404.370045332958!2d-110.91839921154362!3d53.89455962977297!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x53a7693ea2eae74f%3A0x7b0002a5460e46cc!2sElk%20Point%20Chamber%20Of%20Commerce!5e0!3m2!1sen!2sca!4v1687747558687!5m2!1sen!2sca" width="200" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+       
+      </main>
 
     
     <footer>
@@ -159,7 +144,6 @@
         </div>
         <div>
         <p>Last Updated: <span id="lastupdated"></span></p>
-        <p>Weather information provided by Openweather API</span></p>
         </div>
       </div>
     </footer>
