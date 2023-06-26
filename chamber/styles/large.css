@@ -137,33 +137,6 @@
 		align-items: center;
 	  }
 
-
-	/* Contact Page */
-
-	.contact-team {
-		grid-row-start: 2;
-		grid-column-start: 1;
-		grid-column-end: 3;
-		flex-direction: row;
-		justify-content: space-between;
-        align-items: center;
-		padding: 75px
-	}
-
-	.contact-team img {
-		max-width: 250px;
-	}
-
-	.contact-info {
-		grid-row-start: 1;
-		grid-column-start: 2;
-		grid-column-end: 3;
-	}
-
-
-	
-	
-	
 	
 	
 	}
