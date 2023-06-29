@@ -287,7 +287,7 @@ th {
 footer {
   background-color: #4b8349ff;
   color:white;
-  margin: 1.5rem auto;
+  margin: 1.5rem aut=;
   padding: 20px;
   text-align: center;
 }
@@ -380,6 +380,10 @@ div.list section img {
   padding: 20px;
 }
 
+.sec-spotlight {
+  justify-content: center;
+  padding: 30px;
+}
 
 
 

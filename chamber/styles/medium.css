@@ -34,12 +34,12 @@
 	  
 	.sec-spotlight {
 		display: flex;
-		flex-direction: row;
+		flex-direction: column;
 		grid-row-start: 3;
 		grid-column-start: 1;
 		grid-column-end: 13;
 	}
-	
+
 	.div-spotlight1 {
 		flex: 1 50%;
 	}
