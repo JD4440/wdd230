@@ -137,6 +137,10 @@
 		align-items: center;
 	  }
 
+	  .sec-spotlight div:nth-child(3) {
+		display: block;
+	  }
+
 	
 	
 	}

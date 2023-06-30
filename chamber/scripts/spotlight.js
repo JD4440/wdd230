@@ -31,14 +31,15 @@ async function getBusinessData() {
   
     businesses.forEach((business) => {
       // Create elements to add to the div.cards element
-      let i = 0
-      console.log(i)
+      
       spotlightContainer.innerHTML += `
-        <img src = "${business[0].imageurl}"/>
+        <div>
+        <img src = "${business[0].imageurl}" alt = "${business[0].name} logo"/>
         <h3>${business[0].name}</h3>
-        <h>${business[0].phone}</h3>
-        <h3>${business[0].Membership}</h3><br>
+        <h3>${business[0].phone}</h3>
+        <h3>${business[0].Membership}</h3>
+        </div>
       `
-      i+=1
+      
     }) // end of forEach loop
   } // end of function expression

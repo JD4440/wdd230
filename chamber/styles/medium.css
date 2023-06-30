@@ -5,7 +5,7 @@
 	}
 	main {
 		grid-template-columns: repeat(12, 1fr);
-		grid-template-rows: repeat(5, 1fr);
+		grid-template-rows: repeat(5, auto);
 	}
 	
 	.hero {
@@ -34,7 +34,7 @@
 	  
 	.sec-spotlight {
 		display: flex;
-		flex-direction: column;
+		flex-direction: row;
 		grid-row-start: 3;
 		grid-column-start: 1;
 		grid-column-end: 13;
@@ -61,7 +61,6 @@
 	}
 	
 	.top-footer {
-		display: flex;
 		flex-direction: row;
 		align-items: center;
 		justify-content: center;
@@ -70,11 +69,11 @@
 	}
 	
 	.bottom-footer {
-		display: flex;
 		flex-direction: row;
 		align-items: center;
 		justify-content: center;
 		margin: 2em;
+		gap: 10px;
 	}
 	
 	.history {
@@ -168,7 +167,7 @@
 
 	/* Contact Page */
 	.contact-grid {
-		grid-template-rows: 1fr 1fr;
+		grid-template-rows: auto auto;
 		grid-template-columns: 60% 40%;
 	}
 	

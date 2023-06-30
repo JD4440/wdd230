@@ -296,6 +296,18 @@ footer img {
   max-width: 130px;
 }
 
+.top-footer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.bottom-footer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
 .divider {
   display: none;
 }
@@ -381,8 +393,17 @@ div.list section img {
 }
 
 .sec-spotlight {
-  justify-content: center;
-  padding: 30px;
+  justify-content: space-between;
+  padding: 100px 30px;
+ 
+}
+
+.sec-spotlight img {
+  width: 100%;
+}
+
+.sec-spotlight div:nth-child(3) {
+  display: none;
 }
 
 
