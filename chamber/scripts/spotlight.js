@@ -37,7 +37,7 @@ async function getBusinessData() {
         <img src = "${business[0].imageurl}" alt = "${business[0].name} logo"/>
         <h3>${business[0].name}</h3>
         <h3>${business[0].phone}</h3>
-        <h3>${business[0].Membership}</h3>
+        <h3>${business[0].membership}</h3>
         </div>
       `
       
