@@ -58,6 +58,12 @@ body {
     padding: 5px;
     margin: 10px;
     background-color: #fcbf49;
+
+  }
+
+  .social img {
+    width: 40px;
+    height: auto;
   }
 
   ul li {
