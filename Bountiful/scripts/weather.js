@@ -5,14 +5,13 @@ const captionDesc = document.querySelector('figcaption');
 const windSpeed = document.querySelector('#wind-speed');
 const currentHumidity = document.querySelector('#current-hum');
 
-// lat: 53.90017000, lon: -110.90170000 of ELk Point Alberta
-const url = 'https://api.openweathermap.org/data/2.5/weather?lat=53.90017000&lon=-110.90170000&units=metric&appid=93c38752305ca77c6133640779c32982';
-
-//const url = 'http://api.openweathermap.org/data/2.5/weather?q={city}&appid=93c38752305ca77c6133640779c32982';
+// lat: 33.1580900, lon: -117.3505900 of Carlsb bad California
+const currentweather = 'https://api.openweathermap.org/data/2.5/weather?lat=33.1580900&lon=-117.3505900&units=metric&appid=93c38752305ca77c6133640779c32982';
+const threedayforecast = 'https://api.openweathermap.org/data/2.5/forecast?lat=33.1580900&lon=-117.3505900&units=imperial&appid=93c38752305ca77c6133640779c32982';
 
 async function apiFetch() {
   try {
-      const response = await fetch(url);
+      const response = await fetch(currentweather);
       if (response.ok) {
           const data = await response.json();
           // console.log(data);
@@ -24,6 +23,21 @@ async function apiFetch() {
       console.log(error);
   }
 }
+
+async function apiFetch() {
+    try {
+        const response = await fetch(threedayforecast);
+        if (response.ok) {
+            const data = await response.json();
+            // console.log(data);
+            displayResults(data);
+        } else {
+            throw Error(await response.text());
+        }
+    } catch (error) {
+        console.log(error);
+    }
+  }
 
 function displayResults(weatherData) {
   currentTemp.innerHTML = `${weatherData.main.temp.toFixed(1)}`; 

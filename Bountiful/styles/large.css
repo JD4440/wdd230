@@ -85,6 +85,36 @@
 		grid-column: 1/4;
 	}
 
+	/* Homepage */
+
+.hero-grid {
+	grid-row: 1/2;;
+}
+
+.order-here {
+	grid-row: 2/3;
+	grid-column: 1/3;
+}
+
+.weather-grid {
+	grid-row: 2/3;
+	grid-column: 3/5;
+}
+
+.find-us-grid {
+	grid-row: 2/3;
+	grid-column: 5/7;
+}
+
+.coastal-grid {
+	grid-row: 3/4;
+	grid-column: 1/3;
+}
+
+.total-drinks-grid {
+	grid-row: 3/4;
+	grid-column: 3/5;
+}
 
 
 
