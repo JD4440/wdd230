@@ -19,6 +19,10 @@ body {
     margin: 0 auto;
   }
 
+  h1 {
+    text-align: center;
+  }
+
 /* Header and Footer */
 
   header, footer {
@@ -173,7 +177,21 @@ footer {
 }
 
 .order-image {
-  max-width: 100px;
+  max-width: 150px;
+}
+
+.orderfresh {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+}
+
+.order-link {
+  text-align: center;
+  padding: 20px;;
+  background-color: #fcbf49;
+  border-radius: 10px;
 }
 
 

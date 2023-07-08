@@ -60,33 +60,37 @@
     
     
     <main>
-      <section class="hero">
+      <div class="hero">
         <picture>
           <source media="(max-width:700px)" srcset="images/hero-small.webp">
           <source media="(max-width:1000px)" srcset="images/hero-medium.webp">
           <source media="(max-width:2000px)" srcset="images/hero-large.webp">
           <img class="heroimage" src="images/hero-org.webp" alt="Elk Point Town Photo">
         </picture>
-      </section>
+      </div>
     
-    <section class = "orderfresh place-holder-red">
+    <section class = "place-holder-red">
         <h1>Order Here</h1>
+        <section class = "orderfresh">
         <div>
         <h2>Fresh Fruit </h2>
         <picture>
-          <img class = "order-image" src="images/placeholder-1500.webp" data-src="images/order-fruit.webp" alt="Lake Lac Bellueve">
+          <img class = "order-image" src="images/placeholder-1500.webp" data-src="images/order-fruit.webp" alt="Fresh Fruit">
         </picture>
-        <p>Try our delicous organic grown fresh fruit!</p>
+        <p>Try our delicous organic<br> grown fresh fruit!</p>
         </div>
       
-      <section class="place-holder library">
-        <h3>Elk Point Library  </h3>
+        <div>
+        <h2>Fruit Smoothies</h2>
         <picture>
-          <img class="discover-img hover rocorn" src="images/placeholder-org.webp" data-src="images/discoverlibrary.webp" alt="Elk Point Library">
+          <img class = "order-image" src="images/placeholder-1500.webp" data-src="images/order-smoothie.webp" alt="Fruit Smoothie">
         </picture>
-        <p>More than just books! Other services offered include family history resources, computer and internet access, photocopying and fax services, workshops and childrens literacy activities. Borrow everything from books to DVDs. With the network of the Northern Lights Library System it enables its members great access to literature and other works. </p>
+        <p>Try our delicous fresh<br> fruit Smoothies!</p>
+        </div>
       </section>
-    </section>
+      <div>
+        <h2 class="order-link"><a href="fresh.html">Place an Order</a></h2>
+      </div>
     </section>
     
     <section class="weather place-holder-orange">
@@ -100,6 +104,10 @@
       <p><span id="wind-speed"></span> km/h</p>
       <h4>Current Windchill</h4>
       <p><span id="windChill"></span></p>
+      <h4>Humidity</h4>
+      <p><span id="humidity"></span>%</p>
+      <h4>Three Day Forecast</h4>
+      <p><span id="threeDay"></span></p>
   </section>
   
   <section class = "place-holder-red">
