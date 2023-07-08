@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" >
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <meta
+      name="description"
+      content="Bountiful Foods providing organic localy grown foods, including specialty fruit drinks and fruit bags.">
+    <link rel="shortcut icon" href="favicon.ico">
+    <title>Bountiful Foods</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css" >
+    <link rel="stylesheet" href="styles/small.css" >
+    <link rel="stylesheet" href="styles/medium.css" >
+    <link rel="stylesheet" href="styles/large.css" >
+  </head>
+  <body>
+    <header>
+        <button class="hamburger">
+            <span>
+                &#9776;
+            </span>
+            <span>
+                X
+            </span>
+            </button>
+            <nav>
+              <ul class="nav-menu">
+                <li class="nav-link">
+                  <a href="index.html" class="nav-link">Home Page</a>
+                </li>
+                <li class="nav-link">
+                  <a href="fresh.html" class="nav-link">Fresh Orders</a>
+                </li>
+                <li class="nav-link">
+                  <a href="aboutus.html" class="nav-link">About Us</a>
+                </li>
+              </ul>
+            </nav>
+      <div class = "headerlogo">
+      <img class="logo" src="images/logo.webp" alt="Elk Point Chamber Logo">
+      </div>
+      <div class = "sociallinks">
+      <ul class="social">
+        <li class="nav-social-link">
+            <a href="https://facebook.com" target="_blank"><img src="images/facebook.webp" alt="Facebook"></a>
+        </li>
+        <li class="nav-social-link">
+            <a href="https://twitter.com" target="_blank"><img src="images/twitter.webp" alt="Twitter"></a>
+        </li>
+        <li class="nav-social-link">
+            <a href="https://instagram.com" target="_blank"><img src="images/instagram.webp" alt="Instagram"></a>
+        </li>
+      </ul>
+      </div>
+    </header>
+    
+    
+    <main>
+      <section class = "place-holder-red">
+      <h1>Create your smoothie!</h1>
+      <form id="drinkForm">
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" required><br><br>
+    
+        <label for="email">Email:</label>
+        <input type="email" id="email" required><br><br>
+    
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" required><br><br>
+    
+        <label for="fruit1">Fruit 1:</label>
+        <select id="fruit1" required></select><br><br>
+    
+        <label for="fruit2">Fruit 2:</label>
+        <select id="fruit2" required></select><br><br>
+    
+        <label for="fruit3">Fruit 3:</label>
+        <select id="fruit3" required></select><br><br>
+    
+        <label for="instructions">Special Instructions:</label><br>
+        <textarea id="instructions" rows="4" cols="50"></textarea><br><br>
+    
+        <button type="submit">Submit</button>
+      </form>
+      </section>
+    
+      <div id="output"></div>
+      
+    </main>
+
+    
+    <footer>
+        <div class = "footer-address">
+          <p>Bountiful Foods</p>
+          <address>5631 Palmer Way Ste A Carlsbad, CA 92010</address>    
+        </div>
+        <div class = "footer-contact">
+            <p>📧 info@bountifulfoods.com</p>
+            <p>📞 780-645-2919</p>
+            <a href="https://goo.gl/maps/FNQVBvcWWPxhNGk26" id="map-link" class = "externallink">📍Location Map</a>    
+        </div>
+        <div class = "footer-logo">
+          <img class = "logo" src="images/logo.webp" alt="Elk Point Chamber Logo">
+        </div>
+        <div class = "reference">
+        <a class="externallink" href="reference.html">Attributions and References</a>
+        </div>
+        <div class = "last-updated">
+          <p>Last Updated: <span id="lastupdated"></span></p>
+        </div>
+    </footer>
+    
+    
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/drinkorder.js"></script>
+  </body>
+</html>
