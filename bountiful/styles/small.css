@@ -166,7 +166,7 @@ footer {
 
 /* Homepage */
 
-.homepage-main-grid {
+.main-grid {
 	display: grid;
 	grid-template-rows: auto auto auto auto auto auto;
 	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -286,6 +286,32 @@ button:hover {
   background-color: #fcbf49;
 }
 
+.form-grid {
+  grid-row: 1/2;
+  grid-column: 1/7;
+}
+
+.drink-order-summary {
+  grid-row: 2/3;
+  grid-column: 1/7;
+}
+
+/* About Us Page */
+
+.our-story-grid {
+  grid-row: 1/2;
+  grid-column: 1/7;
+}
+
+.location-grid {
+  grid-row: 2/3;
+  grid-column: 1/7;
+}
+
+.our-team {
+  grid-row: 3/4;
+  grid-column: 1/7;
+}
 
 
 

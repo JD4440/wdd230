@@ -60,6 +60,35 @@
 	grid-column: 1/5;
 }
 
+/* Fresh Page */
+.form-grid {
+	grid-row: 1/2;
+	grid-column: 1/6;
+  }
+
+  .drink-order-summary {
+	grid-row: 2/3;
+	grid-column: 2/7;
+  }
+
+  /* About Us Page */
+
+.our-story-grid {
+	grid-row: 1/2;
+	grid-column: 1/6;
+  }
+  
+  .location-grid {
+	grid-row: 2/3;
+	grid-column: 2/7;
+  }
+  
+  .our-team {
+	grid-row: 3/4;
+	grid-column: 1/6;
+  }
+  
+
 
 
 
