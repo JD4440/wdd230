@@ -296,6 +296,14 @@ button:hover {
   grid-column: 1/7;
 }
 
+.about-image {
+  width: 300px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+}
+
 /* About Us Page */
 
 .our-story-grid {
