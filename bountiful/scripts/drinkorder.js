@@ -1,24 +1,11 @@
-const url = './JSON/data.json';
+const url = 'https://jd4440.github.io/wdd230/bountiful/json/data.json';
     
-    // Fetch fruit data from the provided JSON source
-    fetch('url')
-      .then(response => response.json())
-      .then(data => {
-        // Populate fruit select elements
-        const fruitSelects = document.querySelectorAll('select[id^="fruit"]');
-        data.forEach(fruit => {
-          fruitSelects.forEach(select => {
-            const option = document.createElement('option');
-            option.value = fruit.name;
-            option.textContent = fruit.name;
-            select.appendChild(option);
-          });
-        });
-      });
-
-    // Handle form submission
-    document.getElementById('drinkForm').addEventListener('submit', function(event) {
-      event.preventDefault(); // Prevent form submission
+async function fruitFetch(url) {
+  try {
+      const response = await fetch(url);
+      if (response.ok) {
+          const data = await response.json();
+          createOption(data);
 
       // Get input values
       const firstName = document.getElementById('firstName').value;
@@ -30,7 +17,7 @@ const url = './JSON/data.json';
       const instructions = document.getElementById('instructions').value;
 
       // Get the current date
-      const currentDate = new Date().toLocaleDateString();
+      const orderDate = new Date().toDateString();
 
       // Calculate the total nutrition values based on selected fruits
       const selectedFruits = [fruit1, fruit2, fruit3];
@@ -65,4 +52,7 @@ const url = './JSON/data.json';
 
       // Display the output
       document.getElementById('output').innerHTML = output;
-    });
+    }
+  })
+}
+
