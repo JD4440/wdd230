@@ -243,6 +243,12 @@ footer {
   padding: 20px;
 }
 
+iframe {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .coastal {
   display: flex;
   flex-direction: row;
