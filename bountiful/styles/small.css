@@ -226,6 +226,9 @@ footer {
 
 .order-image {
   max-width: 125px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .orderfresh {
