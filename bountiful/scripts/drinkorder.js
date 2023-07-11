@@ -5,19 +5,18 @@ async function fruitFetch(url) {
       const response = await fetch(url);
       if (response.ok) {
           const data = await response.json();
-          createOption(data);
+          console.log(data)
 
-      // Get input values
-      const firstName = document.getElementById('firstName').value;
-      const email = document.getElementById('email').value;
-      const phone = document.getElementById('phone').value;
-      const fruit1 = document.getElementById('fruit1').value;
-      const fruit2 = document.getElementById('fruit2').value;
-      const fruit3 = document.getElementById('fruit3').value;
-      const instructions = document.getElementById('instructions').value;
+      //Poppulate options
+      data.forEach((item)=>{
+        let fruit1 = document.getElementById("fruit1")
+        let fruit2 = document.getElementById("fruit2")
+        let fruit3 = document.getElementById("fruit3")
+        fruit1.innerHTML += `<option value = "${item.name}">${item.name}</option>`
+        fruit2.innerHTML += `<option value = "${item.name}">${item.name}</option>`
+        fruit3.innerHTML += `<option value = "${item.name}">${item.name}</option>`
+      })
 
-      // Get the current date
-      const orderDate = new Date().toDateString();
 
       // Calculate the total nutrition values based on selected fruits
       const selectedFruits = [fruit1, fruit2, fruit3];
@@ -33,26 +32,44 @@ async function fruitFetch(url) {
         }
       });
 
-      // Generate the formatted output
-      const output = `
-        <h2>Order Details:</h2>
-        <p><strong>First Name:</strong> ${firstName}</p>
-        <p><strong>Email:</strong> ${email}</p>
-        <p><strong>Phone Number:</strong> ${phone}</p>
-        <p><strong>Order Date:</strong> ${currentDate}</p>
-        <p><strong>Selected Fruits:</strong> ${selectedFruits.join(', ')}</p>
-        <p><strong>Special Instructions:</strong> ${instructions}</p>
-        <h2>Total Nutrition:</h2>
-        <p><strong>Carbohydrates:</strong> ${totalCarbs}g</p>
-        <p><strong>Protein:</strong> ${totalProtein}g</p>
-        <p><strong>Fat:</strong> ${totalFat}g</p>
-        <p><strong>Sugar:</strong> ${totalSugar}g</p>
-        <p><strong>Calories:</strong> ${totalCalories}kcal</p>
-      `;
 
-      // Display the output
-      document.getElementById('output').innerHTML = output;
+
+
     }
-  })
+  }
+  catch(error){console.log(error)}
 }
 
+fruitFetch(url)
+
+function drinkCard() {
+  console.log("here")
+    // Get the current date
+    const orderDate = new Date().toDateString();
+    const firstName = document.getElementById('firstName').value;
+    const email = document.getElementById('email').value;
+    const phone = document.getElementById('phone').value;
+    const fruit1 = document.getElementById('fruit1').value;
+    const fruit2 = document.getElementById('fruit2').value;
+    const fruit3 = document.getElementById('fruit3').value;
+    // Generate the formatted output
+    const output = `
+      <h2>Order Details:</h2>
+      <p><strong>First Name:</strong> ${firstName}</p>
+      <p><strong>Email:</strong> ${email}</p>
+      <p><strong>Phone Number:</strong> ${phone}</p>
+      <p><strong>Order Date:</strong> ${orderDate}</p>
+      <p><strong>Selected Fruits:</strong> ${fruit1 + " " + fruit2 + " " + fruit3}</p>
+      <p><strong>Special Instructions:</strong> ${instructions}</p>
+      <h2>Total Nutrition:</h2>
+      <p><strong>Carbohydrates:</strong> ${totalCarbs}g</p>
+      <p><strong>Protein:</strong> ${totalProtein}g</p>
+      <p><strong>Fat:</strong> ${totalFat}g</p>
+      <p><strong>Sugar:</strong> ${totalSugar}g</p>
+      <p><strong>Calories:</strong> ${totalCalories}kcal</p>
+    `;
+      // Display the output
+      document.getElementById('output').innerHTML = output;
+}
+
+document.querySelector("#drink-card-submit").addEventListener("click",drinkCard)
