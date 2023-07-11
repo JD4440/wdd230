@@ -217,17 +217,19 @@ footer {
 
 
 .weather {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  flex-direction: column;
+  grid-template-columns: auto;
   align-items: center;
   justify-items: center;
   width: 100%;
 }
 
-.weather h2 {
-  grid-column-start: 1;
-  grid-column-end: 3;
+figcaption {
+  text-align: center;
+  font-size: 25px;
 }
+
 
 .order-image {
   max-width: 125px;
