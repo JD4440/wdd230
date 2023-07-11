@@ -106,7 +106,7 @@
 	grid-column: 5/7;
 }
 
-.coastal-grid {
+.coastal-grid-one {
 	grid-row: 3/4;
 	grid-column: 1/3;
 }
@@ -114,6 +114,11 @@
 .total-drinks-grid {
 	grid-row: 3/4;
 	grid-column: 3/5;
+}
+
+.coastal-grid-two {
+	grid-row: 3/4;
+	grid-column: 5/7;
 }
 
 /* Fresh Page */
