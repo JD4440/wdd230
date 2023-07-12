@@ -65,19 +65,19 @@ async function  drinkCard() {
     
     // Generate the formatted output
     const output = `
-      <h2>Order Details:</h2>
-      <p><strong>First Name:</strong> ${firstName}</p>
-      <p><strong>Email:</strong> ${email}</p>
-      <p><strong>Phone Number:</strong> ${phone}</p>
-      <p><strong>Order Date:</strong> ${orderDate}</p>
-      <p><strong>Selected Fruits:</strong> ${fruit1 + " " + fruit2 + " " + fruit3}</p>
-      <p><strong>Special Instructions:</strong> ${instructions}</p>
-      <h2>Total Nutrition:</h2>
-      <p><strong>Carbohydrates:</strong> ${totalCarbs.toFixed(2)}g</p>
-      <p><strong>Protein:</strong> ${totalProtein.toFixed(2)}g</p>
-      <p><strong>Fat:</strong> ${totalFat.toFixed(2)}g</p>
-      <p><strong>Sugar:</strong> ${totalSugar.toFixed(2)}g</p>
-      <p><strong>Calories:</strong> ${totalCalories.toFixed(2)}kcal</p>
+      <h1>Order Details:</h1>
+      <h2><strong>First Name:</strong> ${firstName}</h2>
+      <h2><strong>Email:</strong> ${email}</h2>
+      <h2><strong>Phone Number:</strong> ${phone}</h2>
+      <h2><strong>Order Date:</strong> ${orderDate}</h2>
+      <h2><strong>Selected Fruits:</strong> ${fruit1 + " " + fruit2 + " " + fruit3}</h2>
+      <h2><strong>Special Instructions:</strong> ${instructions}</h2>
+      <h1>Total Nutrition:</h1>
+      <h2><strong>Carbohydrates:</strong> ${totalCarbs.toFixed(2)}g</h2>
+      <h2><strong>Protein:</strong> ${totalProtein.toFixed(2)}g</h2>
+      <h2><strong>Fat:</strong> ${totalFat.toFixed(2)}g</h2>
+      <h2><strong>Sugar:</strong> ${totalSugar.toFixed(2)}g</h2>
+      <h2><strong>Calories:</strong> ${totalCalories.toFixed(2)}kcal</h2>
     `;
       // Display the output
       document.getElementById('output').innerHTML = output;

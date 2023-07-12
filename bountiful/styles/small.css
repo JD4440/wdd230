@@ -15,7 +15,6 @@
 }
 
 body {
-    font-family: 'Times New Roman', serif;
     margin: 0 auto;
   }
 
@@ -23,8 +22,13 @@ body {
     background-color: #fcbf49;
   }
 
-  h1, h2, h3 {
+  h1, h2, h3, h4, h5, h6 {
     text-align: center;
+    font-family: 'Tahoma', serif;;
+  }
+
+  p {
+    font-family: 'Times New Roman', serif;
   }
 
 /* Header and Footer */
@@ -236,6 +240,14 @@ figcaption {
   display: block;
   margin-left: auto;
   margin-right: auto;
+}
+
+.order-count-image {
+  max-width: 250px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
 }
 
 .orderfresh {
